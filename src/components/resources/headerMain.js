@@ -7,7 +7,7 @@ import { faSignInAlt, faScroll } from "@fortawesome/free-solid-svg-icons"
 
 import Logo from "../../../static/assets/images/bottega-logo-black.png"
 
-export default function haedermain() {
+export default function headerMain() {
     return (
         <div className="header-main">
             <div className="header-top">
@@ -62,22 +62,22 @@ export default function haedermain() {
                 </div>
             </div>
 
-            <div className="header-bottom">
+            <div className="header-bottom" id="navbar">
                 <div className="nav-links-wrapper">
-                    <div className="nav-link">
-                        <Link to="/python-react-full-time">Programs&nbsp;<span class="dropdown-arrow">&#x02C5;</span></Link>
-                        <div className="nav-dropdown">
-                            <Link to="/python-react-full-time">Python React Full Time</Link>
-                            <Link to="/python-react-full-time-remote">Python React Full Time Remote</Link>
-                            <Link to="/python-react-part-time">Python React Part Time</Link>
-                            <Link to="/front-end-part-time">Front-End Part Time</Link>
+                    <div className="nav-link" style={{width: "77.5px"}}>
+                        <Link to="/python-react-full-time">Programs&nbsp;<span className="dropdown-arrow">&#x02C5;</span></Link>
+                        <div className="nav-dropdown" style={{width: "195px"}}>
+                            <Link to="/python-react-full-time">Python&nbsp;React&nbsp;Full&nbsp;Time</Link>
+                            <Link to="/python-react-full-time-remote">Python&nbsp;React&nbsp;Full&nbsp;Time&nbsp;Remote</Link>
+                            <Link to="/python-react-part-time">Python&nbsp;React&nbsp;Part&nbsp;Time</Link>
+                            <Link to="/front-end-part-time">Front&nbsp;End&nbsp;Part&nbsp;Time</Link>
                         </div>
                     </div>
 
-                    <div className="nav-link">
-                        <Link to="/outcomes">Outcomes&nbsp;<span class="dropdown-arrow">&#x02C5;</span></Link>
-                        <div className="nav-dropdown">
-                            <Link to="/employer-list">Employer List</Link>
+                    <div className="nav-link" style={{width: "80.8px"}}>
+                        <Link to="/outcomes">Outcomes&nbsp;<span className="dropdown-arrow">&#x02C5;</span></Link>
+                        <div className="nav-dropdown" style={{width: "85px"}}>
+                            <Link to="/employer-list">Employer&nbsp;List</Link>
                         </div>
                     </div>
 
@@ -85,9 +85,9 @@ export default function haedermain() {
                         <Link to="/instructor-endorsements">Instructor&nbsp;Endorsements</Link>
                     </div>
 
-                    <div className="nav-link">
-                        <Link to="/university-partners">University&nbsp;Partners&nbsp;<span class="dropdown-arrow">&#x02C5;</span></Link>
-                        <div className="nav-dropdown">
+                    <div className="nav-link" style={{width: "134.1px"}}>
+                        <Link to="/university-partners">University&nbsp;Partners&nbsp;<span className="dropdown-arrow">&#x02C5;</span></Link>
+                        <div className="nav-dropdown" style={{width: "73px"}}>
                             <Link to="/universities">Universities</Link>
                         </div>
                     </div>
