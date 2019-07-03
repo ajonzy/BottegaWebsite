@@ -25,18 +25,24 @@ export default function headerMain() {
     return (
         <div className="header-main">
             <div className="header-top">
-                <div className="social-media-wrapper">
-                    <Link to="https://www.facebook.com/bottegaschool/">
-                        <FontAwesomeIcon icon={faFacebookF} />
-                    </Link>
+                <div className="header-top-wrapper">
+                    <div className="social-media-wrapper">
+                        <Link to="https://www.facebook.com/bottegaschool/">
+                            <FontAwesomeIcon icon={faFacebookF} />
+                        </Link>
 
-                    <Link to="https://www.linkedin.com/school/bottega-tech/">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </Link>
+                        <Link to="https://www.linkedin.com/school/bottega-tech/">
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </Link>
 
-                    <Link to="https://www.instagram.com/bottega.tech/?hl=en">
-                        <FontAwesomeIcon icon={faInstagram} />
-                    </Link>
+                        <Link to="https://www.instagram.com/bottega.tech/?hl=en">
+                            <FontAwesomeIcon icon={faInstagram} />
+                        </Link>
+                    </div>
+
+                    <div className="questions-link">
+                        <a href="https://calendly.com/bottega-advisors/phonecall">Have questions? Click here to schedule a call!</a>
+                    </div>
                 </div>
             </div>
 
@@ -51,25 +57,25 @@ export default function headerMain() {
                     <div className="login-apply-button-wrapper">
                         <div className="login-wrapper button-wrapper">
                             <div className="nav-link-circle">
-                                <Link to="https://bottega.devcamp.com/users/sign_in">
+                                <a href="https://bottega.devcamp.com/users/sign_in">
                                     <FontAwesomeIcon icon={faSignInAlt} />
-                                </Link>
+                                </a>
                             </div>
 
                             <div className="nav-link">
-                                <Link to="https://bottega.devcamp.com/users/sign_in">DevCamp&nbsp;Login</Link>
+                                <a href="https://bottega.devcamp.com/users/sign_in">DevCamp&nbsp;Login</a>
                             </div>
                         </div>
 
                         <div className="apply-wrapper button-wrapper">
                             <div className="nav-link-circle">
-                                <Link to="https://apply.bottega.tech">
+                                <a href="https://apply.bottega.tech">
                                     <FontAwesomeIcon icon={faScroll} />
-                                </Link>
+                                </a>
                             </div>
 
                             <div className="nav-link">
-                                <Link to="https://apply.bottega.tech">Apply&nbsp;Here</Link>
+                                <a href="https://apply.bottega.tech">Apply&nbsp;Here</a>
                             </div>
                         </div>
                     </div>

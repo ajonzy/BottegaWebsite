@@ -7,15 +7,36 @@
         justify-content: center;
         align-items: center;
 
-        .social-media-wrapper {
-            width: 960px;
+        .header-top-wrapper {
+            width: 980px;
+            display: flex;
+            justify-content: space-between;
 
             a {
                 color: white;
                 padding-right: 15px;
                 font-size: 15px;
+                text-decoration: none;
+            }
+
+            .social-media-wrapper {
+                display: flex;
+                align-items: center;
+            }
+
+            .questions-link {
+                background-color: $green;
+                display: flex;
+                align-items: center;
+                // margin-right: 50px;
+
+                a {
+                    padding: 15px;
+                }
             }
         }
+
+        
     }
 
     .header-center {
