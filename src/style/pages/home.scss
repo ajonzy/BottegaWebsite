@@ -46,3 +46,108 @@
         }
     }
 }
+
+.course-display-section-wrapper {
+    width: 100%;
+    padding-top: 60px;
+    // background-color: #f3f3f3;
+    // -webkit-box-shadow: inset 0px 60px 35px -35px rgba(0,0,0,0.4);
+    // -moz-box-shadow: inset 0px 60px 35px -35px rgba(0,0,0,0.4);
+    // box-shadow: inset 0px 60px 35px -35px rgba(0,0,0,0.4);
+
+    .course-display-header{
+        width: 100%;
+        text-align: center;
+        display:  flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+            font-size: 36px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: $green;
+        }
+
+        h5 {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+            max-width: 704px;
+        }
+
+        .p1 {
+            margin-top: 20px;
+        }
+
+        .p2 {
+            margin-top: 7px;
+        }
+    }
+
+    .course-display {
+        display: flex;
+        justify-content: center;
+        margin-top: 75px;
+
+        .course-block {
+            width: 207px;
+            height: 350px;
+            padding: 0px 18px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                height: 71px;
+            }
+
+            .course-title {
+                font-family: 'Nunito Sans', sans-serif;
+                font-size: 14px;
+                margin-top: 12px;
+            }
+
+            .course-subtitle {
+                font-family: 'Nunito Sans', sans-serif;
+                font-size: 14px;
+                margin-top: 2px;
+                color: $green;
+            }
+
+            .course-description {
+                font-family: 'Nunito Sans', sans-serif;
+                font-size: 18px;
+                margin-top: 6px;
+                color: $darkGrey;
+                font-weight: 400;
+            }
+
+            .course-button {
+                margin-top: 15px;
+                padding: 13px 22px;
+                border: 2px solid black;
+                width: 102px;
+                height: 20px;
+                transition: all .45s cubic-bezier(0.25,1,0.33,1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a { 
+                    color: black;
+                    text-decoration: none;
+                    font-weight: 700;
+                }
+
+                &:hover {
+                    width: 117px;
+                    height: 25px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
