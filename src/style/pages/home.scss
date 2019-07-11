@@ -12,14 +12,20 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    // height: 486px;
+    height: 486px;
     width: 100%;
+    overflow: hidden;
+
+    video {
+        object-fit: cover;
+        object-position: 0px 20%;
+        -ms-transform: scaleX(2); //For IE
+    }
 
     .video-display-text {
         width: 613px;
         position: absolute;
         color: white;
-        transform: translateY(-100px);
 
         h1 {
             font-size: 45px;
