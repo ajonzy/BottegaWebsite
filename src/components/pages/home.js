@@ -72,6 +72,59 @@ export default function home() {
                         </div>
                     </div>
                 </div>
+            
+                <div className="course-description-section-wrapper">
+                    <img src="https://bottega.tech/wp-content/uploads/2018/03/pink-dust-copy.jpg" alt=""/>
+                    <div className="course-description-section">
+                        <div className="course-description-block">
+                            <h3>Full Time On-Campus</h3>
+                            <h5>12 Weeks</h5>
+                            <h5>9am to 5pm + after hours</h5>
+                            <p>
+                                Class Hours: 600+<br/>
+                                Daily instructor led class time<br/>
+                                Attend our Lehi, UT campus<br/>
+                                Financing Available
+                            </p>
+                            <a href="#" className="apply-wrapper">
+                                Apply&nbsp;now
+                                <span><div>></div></span>
+                            </a>
+                        </div>
+
+                        <div className="course-description-block">
+                            <h3>Part Time Online</h3>
+                            <h5>6-9 Months</h5>
+                            <h5>2-3 hours per day</h5>
+                            <p>
+                                Class hours: 600+<br/>
+                                Unlimited online TA assistance<br/>
+                                Guided online learning path<br/>
+                                Financing Available
+                            </p>
+                            <a href="#" className="apply-wrapper">
+                                Apply&nbsp;now
+                                <span><div>></div></span>
+                            </a>
+                        </div>
+
+                        <div className="course-description-block">
+                            <h3>Full Time Online</h3>
+                            <h5>12 Weeks</h5>
+                            <h5>9am to 5pm + after hours</h5>
+                            <p>
+                                Class Hours: 600+<br/>
+                                Daily instructor led class time<br/>
+                                Attend by remotely accessing course webinars<br/>
+                                Financing Available
+                            </p>
+                            <a href="#" className="apply-wrapper">
+                                Apply&nbsp;now
+                                <span><div>></div></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
