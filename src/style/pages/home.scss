@@ -15,11 +15,13 @@
     height: 486px;
     width: 100%;
     overflow: hidden;
+    background-color: black;
 
     video {
         object-fit: cover;
         object-position: 0px 20%;
         -ms-transform: scaleX(2); //For IE
+        opacity: .7;
     }
 
     .video-display-text {
@@ -126,26 +128,28 @@
             }
 
             .course-button {
-                margin-top: 15px;
-                padding: 13px 22px;
-                border: 2px solid black;
+                margin-top: 30px;
                 width: 102px;
                 height: 20px;
-                transition: all .45s cubic-bezier(0.25,1,0.33,1);
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 a { 
-                    color: black;
+                    padding: 13px 22px;
+                    color: #444444;
                     text-decoration: none;
                     font-weight: 700;
-                }
+                    border: 2px solid #444444;
+                    transition: all .45s cubic-bezier(0.25,1,0.33,1);
 
-                &:hover {
-                    width: 117px;
-                    height: 25px;
-                    font-size: 15px;
+                    &:hover {
+                        width: 117px;
+                        padding: 15px 25px;
+                        font-size: 15px;
+                        border: 2px solid black;
+                        color: black;
+                    }
                 }
             }
         }
