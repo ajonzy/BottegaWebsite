@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from "react-router-dom"
 
 import Header from "../resources/headerMain"
 
 export default function home() {
+
     return (
         <div className="home">
             <Header />
@@ -18,8 +20,8 @@ export default function home() {
                 <div className="course-display-section-wrapper">
                     <div className="course-display-header">
                         <span>Choose Your Course</span>
-                        <h5 class="p1">We offer the most up to date computer science tracks in the world, because we work with top employers and update them every 90 days.</h5>
-                        <h5 class="p2">Our courses are designed to teach you through deep hands on learning to get you into the job market in the career of your dreams, with the help you need to understand and stay motivated every step of the way.</h5>
+                        <h5 className="p1">We offer the most up to date computer science tracks in the world, because we work with top employers and update them every 90 days.</h5>
+                        <h5 className="p2">Our courses are designed to teach you through deep hands on learning to get you into the job market in the career of your dreams, with the help you need to understand and stay motivated every step of the way.</h5>
                     </div>
 
                     <div className="course-display">
@@ -30,6 +32,12 @@ export default function home() {
                             <h5 className="course-description">Explosive demand, Engineering track</h5>
                             <div className="course-button">
                                 <a href="#">Learn&nbsp;More</a>
+                            </div>
+
+                            <div className="learn-more-list">
+                                <Link to="/python-react-full-time/">Full Time On Campus</Link>
+                                <Link to="/python-react-part-time/">Part Time Remote</Link>
+                                <Link to="/python-react-full-time-remote/">Full Time Remote</Link>
                             </div>
                         </div>
 
