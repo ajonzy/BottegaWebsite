@@ -135,7 +135,11 @@
                 justify-content: center;
                 align-items: center;
 
-                a { 
+                .course-dropdown {
+                    cursor: context-menu;
+                }
+
+                a, .course-dropdown { 
                     padding: 13px 33px;
                     color: #444444;
                     text-decoration: none;
@@ -152,6 +156,16 @@
                         color: black;
                     }
                 }
+
+                .coming-soon-block {
+                    padding: 13px 33px;
+                    color: #ddd;
+                    text-decoration: none;
+                    font-weight: 700;
+                    border: 2px solid #ddd;
+                    font-family: 'Nunito Sans', sans-serif;
+                    cursor: context-menu;
+                }
             }
 
             .learn-more-list {
@@ -163,7 +177,7 @@
                 background-color: black;
                 font-size: 13.9px;
                 transform: translateY(15px);
-                transition: visibility 0s 2.5s;
+                transition: visibility 0s 1s;
 
                 a {
                     color: white;

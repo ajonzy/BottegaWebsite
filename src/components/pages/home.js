@@ -31,7 +31,7 @@ export default function home() {
                             <h6 className="course-subtitle">Beginner</h6>
                             <h5 className="course-description">Explosive demand, Engineering track</h5>
                             <div className="course-button">
-                                <a href="#">Learn&nbsp;More</a>
+                                <div className="course-dropdown">Learn&nbsp;More</div>
                             </div>
 
                             <div className="learn-more-list">
@@ -47,7 +47,7 @@ export default function home() {
                             <h6 className="course-subtitle">Beginner</h6>
                             <h5 className="course-description">Build visually, highly employable skills</h5>
                             <div className="course-button">
-                                <a href="#">Learn&nbsp;More</a>
+                                <a href="/front-end-part-time/">Learn&nbsp;More</a>
                             </div>
                         </div>
 
@@ -57,7 +57,7 @@ export default function home() {
                             <h6 className="course-subtitle">Advanced</h6>
                             <h5 className="course-description">High paying salary, specialization</h5>
                             <div className="course-button">
-                                <a href="#">Learn&nbsp;More</a>
+                                <a href="/ruby-full-stack-part-time-remote/">Learn&nbsp;More</a>
                             </div>
                         </div>
 
@@ -67,7 +67,7 @@ export default function home() {
                             <h6 className="course-subtitle">Advanced</h6>
                             <h5 className="course-description">Bleeding edge problem solving, logic</h5>
                             <div className="course-button">
-                                <a href="#">Learn&nbsp;More</a>
+                                <div className="coming-soon-block">Coming&nbsp;Soon</div>
                             </div>
                         </div>
                     </div>
