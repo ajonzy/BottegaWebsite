@@ -27,17 +27,17 @@ export default function headerMain() {
             <div className="header-top">
                 <div className="header-top-wrapper">
                     <div className="social-media-wrapper">
-                        <Link to="https://www.facebook.com/bottegaschool/">
+                        <a href="https://www.facebook.com/bottegaschool/">
                             <FontAwesomeIcon icon={faFacebookF} />
-                        </Link>
+                        </a>
 
-                        <Link to="https://www.linkedin.com/school/bottega-tech/">
+                        <a href="https://www.linkedin.com/school/bottega-tech/">
                             <FontAwesomeIcon icon={faLinkedin} />
-                        </Link>
+                        </a>
 
-                        <Link to="https://www.instagram.com/bottega.tech/?hl=en">
+                        <a href="https://www.instagram.com/bottega.tech/?hl=en">
                             <FontAwesomeIcon icon={faInstagram} />
-                        </Link>
+                        </a>
                     </div>
 
                     <div className="questions-link">
