@@ -12,6 +12,7 @@ import PythonJS from "../../../static/assets/images/homepage/Python-JS.png"
 import RubyRails from "../../../static/assets/images/homepage/Ruby-Rails.png"
 import BottegaVideo from "../../../static/assets/images/homepage/Bottega-video.mp4"
 import Quotes from "../../../static/assets/images/homepage/quotes.png"
+import Employers from "../../../static/assets/images/homepage/employers.png"
 
 export default function home() {
 
@@ -174,6 +175,16 @@ export default function home() {
                         <h5>Kat Campagna</h5>
                         <h6>Client Relations and Recruiting Manager—SEARCH Group Partners</h6>
                     </div>
+                </div>
+            
+                <div className="employers-section-wrapper">
+                    <div className="employers-section-content">
+                        <h2>Courses Targeted To Get You Hired!</h2>
+                        <p>Our graduates get hired by some of the<br/>world’s best companies.</p>
+                        <Link to="/employer-list/">Click here to see more!</Link>
+                    </div>
+
+                    <img src={Employers} alt=""/>
                 </div>
             </div>
         </div>
