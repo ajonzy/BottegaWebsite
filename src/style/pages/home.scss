@@ -295,8 +295,7 @@
     }
 }
 
-.parttime-promotion-section-wrapper {
-    // background-image: url(../../../static/assets/images/homepage/parttime-promotion.jpg); 
+.parttime-promotion-section-wrapper { 
     background-position: center bottom; 
     background-repeat: no-repeat; 
     background-size: 1214px 100%;
@@ -401,6 +400,42 @@
             img {
                 width: 512px;
             }
+        }
+    }
+}
+
+.recruitment-quote-wrapper {
+    height: 505px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+
+    .recruitment-quote-content {
+        text-align: center;
+        width: 750px;
+        padding-top: 70px;
+
+        img {
+            width: 70px;
+            margin-bottom: 32px;
+        }
+
+        h4 {
+            font-size: 21px;
+            font-weight: 300;
+            margin-bottom: 32px;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            margin-bottom: 7px;
+        }
+
+        h6 {
+            font-size: 14px;
+            font-family: 'Nunito Sans', sans-serif;
         }
     }
 }

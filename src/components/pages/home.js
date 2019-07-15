@@ -11,6 +11,7 @@ import MachineLearning from "../../../static/assets/images/homepage/Machine-Lear
 import PythonJS from "../../../static/assets/images/homepage/Python-JS.png"
 import RubyRails from "../../../static/assets/images/homepage/Ruby-Rails.png"
 import BottegaVideo from "../../../static/assets/images/homepage/Bottega-video.mp4"
+import Quotes from "../../../static/assets/images/homepage/quotes.png"
 
 export default function home() {
 
@@ -163,6 +164,15 @@ export default function home() {
                         <div className="college-credit-img">
                             <img src={CollegeCredit} alt=""/>
                         </div>
+                    </div>
+                </div>
+
+                <div className="recruitment-quote-wrapper">
+                    <div className="recruitment-quote-content">
+                        <img src={Quotes} alt=""/>
+                        <h4>"Bottega is the first and only coding school that SEARCH Group Partners regularly contacts for candidate recommendations. Bottega grads perform extremely well in the interview process and have continuously won jobs over students from other schools. I find them to be well prepared, polished, and have no hesitation to introduce them to my clients."</h4>
+                        <h5>Kat Campagna</h5>
+                        <h6>Client Relations and Recruiting Manager—SEARCH Group Partners</h6>
                     </div>
                 </div>
             </div>
