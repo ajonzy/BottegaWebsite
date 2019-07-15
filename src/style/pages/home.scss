@@ -248,7 +248,9 @@
             align-items: center;
             width: 120px;
 
-            span {
+            p {
+                margin: 0px;
+                padding: 0px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -275,17 +277,17 @@
                 }
 
                 div {
-                    transform: translateX(11px);
+                    transform: translate(11px, .5px);
                 }
             }
 
-            &:hover span {
-                border: 1px solid transparent;
+            &:hover p {
+                border-color: transparent;
                 transform:scale(.8,1.3) translateX(10px); /* W3C */
 
             }
 
-            &:hover span:after {
+            &:hover p:after {
                 border-bottom: 1px solid white;
                 transform: translate(-15px, -.5px);
             }

@@ -86,9 +86,9 @@ export default function home() {
                                 Attend our Lehi, UT campus<br/>
                                 Financing Available
                             </p>
-                            <a href="#" className="apply-wrapper">
+                            <a href="https://apply.bottega.tech/" className="apply-wrapper">
                                 Apply&nbsp;now
-                                <span><div>></div></span>
+                                <p><div>></div></p>
                             </a>
                         </div>
 
@@ -102,9 +102,9 @@ export default function home() {
                                 Guided online learning path<br/>
                                 Financing Available
                             </p>
-                            <a href="#" className="apply-wrapper">
+                            <a href="https://apply.bottega.tech/" className="apply-wrapper">
                                 Apply&nbsp;now
-                                <span><div>></div></span>
+                                <p><div>></div></p>
                             </a>
                         </div>
 
@@ -118,9 +118,9 @@ export default function home() {
                                 Attend by remotely accessing course webinars<br/>
                                 Financing Available
                             </p>
-                            <a href="#" className="apply-wrapper">
+                            <a href="https://apply.bottega.tech/" className="apply-wrapper">
                                 Apply&nbsp;now
-                                <span><div>></div></span>
+                                <p><div>></div></p>
                             </a>
                         </div>
                     </div>
