@@ -135,6 +135,27 @@ export default function home() {
                         </div>
                     </div>
                 </div>
+            
+                <div className="college-credit-promotion-section-wrapper">
+                    <div className="college-credit-section-content">
+                        <div className="college-credit-section-text">
+                            <div className="college-credit-text-block">
+                                <h2>Courses So Good They Come With College Credit <a href="http://www2.acenet.edu/credit/?fuseaction=browse.getOrganizationDetail&FICE=1009331">Recommendations</a></h2>
+                                <div className="spacer"></div>
+                                <span>Yup! We’re the only bootcamp offering a transcript accepted by universities.</span>
+                            </div>
+
+                            <div className="college-credit-text-block">
+                                <h2>Bringing Students From Day 1 To Hired</h2>
+                                <span>Our intensive curriculum is centered around building a foundation for students to find placement as an entry level developer. We believe any student determined to learn can become a developer with our world-class courses.</span>
+                            </div>
+                        </div>
+
+                        <div className="college-credit-img">
+                            <img src="https://bottega.tech/wp-content/uploads/2017/11/all-devicesAB.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

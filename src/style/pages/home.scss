@@ -348,3 +348,59 @@
         }
     }
 }
+
+.college-credit-promotion-section-wrapper {
+    height: 687px;
+    display: flex;
+    justify-content: center;
+
+    .college-credit-section-content {
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+
+        .college-credit-section-text {
+            max-width: 547px;
+
+            .college-credit-text-block {
+                margin-bottom: 150px;
+
+                h2 {
+                    font-size: 30px;
+                    font-weight: 400;
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+                        border-bottom: 2px solid black;
+                        transition: .2s;
+
+                        &:hover {
+                            color: $green;
+                            border-bottom-color: transparent;
+                        }
+                    }
+                }
+
+                .spacer {
+                    height: 18px;
+                }
+
+                span {
+                    font-size: 18px;
+                    color: $darkGrey;
+                    font-family: 'Nunito Sans', sans-serif;
+                }
+            }
+        }
+
+        .college-credit-img {
+            padding-top: 30px;
+            padding-left: 50px;
+
+            img {
+                width: 512px;
+            }
+        }
+    }
+}
