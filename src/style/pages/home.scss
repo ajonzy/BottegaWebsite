@@ -294,3 +294,190 @@
         }
     }
 }
+
+.parttime-promotion-section-wrapper { 
+    background-position: center bottom; 
+    background-repeat: no-repeat; 
+    background-size: 1214px 100%;
+    background-color: #f9f9f9;
+    height: 728px;
+    display: flex;
+    justify-content: center;
+
+    .parttime-promotion-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 700px;
+
+        h2 {
+            font-weight: 400;
+            font-size: 25.5px;
+            margin-top: 50px;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'Nunito Sans', sans-serif;
+            text-align: center;
+            line-height: 25px;
+            margin-top: 25px;
+        }
+
+        .parttime-promotion-button {
+            width: 116px;
+            height: 50px;
+            margin-top: 25px;
+            background-color: $green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity .45s cubic-bezier(0.25,1,0.33,1);
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: 700;
+            }
+
+            &:hover {
+                opacity: .87;
+            }
+        }
+    }
+}
+
+.college-credit-promotion-section-wrapper {
+    height: 687px;
+    display: flex;
+    justify-content: center;
+
+    .college-credit-section-content {
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+
+        .college-credit-section-text {
+            max-width: 547px;
+
+            .college-credit-text-block {
+                margin-bottom: 150px;
+
+                h2 {
+                    font-size: 30px;
+                    font-weight: 400;
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+                        border-bottom: 2px solid black;
+                        transition: .2s;
+
+                        &:hover {
+                            color: $green;
+                            border-bottom-color: transparent;
+                        }
+                    }
+                }
+
+                .spacer {
+                    height: 18px;
+                }
+
+                span {
+                    font-size: 18px;
+                    color: $darkGrey;
+                    font-family: 'Nunito Sans', sans-serif;
+                }
+            }
+        }
+
+        .college-credit-img {
+            padding-top: 30px;
+            padding-left: 50px;
+
+            img {
+                width: 512px;
+            }
+        }
+    }
+}
+
+.recruitment-quote-wrapper {
+    height: 505px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+
+    .recruitment-quote-content {
+        text-align: center;
+        width: 750px;
+        padding-top: 70px;
+
+        img {
+            width: 70px;
+            margin-bottom: 32px;
+        }
+
+        h4 {
+            font-size: 21px;
+            font-weight: 300;
+            margin-bottom: 32px;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            margin-bottom: 7px;
+        }
+
+        h6 {
+            font-size: 14px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+    }
+}
+
+.employers-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+
+    .employers-section-content {
+        text-align: center;
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 25.5px;
+            font-weight: 400;
+            margin-bottom: 7px;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 300;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: 18px;
+            font-family: 'Nunito Sans', sans-serif;
+            color: $green;
+            text-decoration: none;
+            transition: .2s;
+
+            &:hover {
+                color: $darkGrey;
+            }
+        }
+    }
+
+    img {
+        width: 100vw;
+    }
+}
