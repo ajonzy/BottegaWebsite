@@ -125,6 +125,16 @@ export default function home() {
                         </div>
                     </div>
                 </div>
+            
+                <div className="parttime-promotion-section-wrapper">
+                    <div className="parttime-promotion-content">
+                        <h2>Keep Your Day Job, Learn Part Time</h2>
+                        <h5>Can’t attend full time? Learn anytime anywhere with our part time online program. We built a game changing online learning software to guide you to success.  See your progress, mix and match skill based learning, all with instructors and access to mentors for when you get stuck.</h5>
+                        <div className="parttime-promotion-button">
+                            <Link to="/python-react-part-time/">Learn More</Link>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
