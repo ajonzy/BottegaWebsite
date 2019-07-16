@@ -13,6 +13,7 @@ import RubyRails from "../../../static/assets/images/homepage/Ruby-Rails.png"
 import BottegaVideo from "../../../static/assets/images/homepage/Bottega-video.mp4"
 import Quotes from "../../../static/assets/images/homepage/quotes.png"
 import Employers from "../../../static/assets/images/homepage/employers.png"
+import BottegaDifference from "../../../static/assets/images/homepage/bottega-difference.jpg"
 
 export default function home() {
 
@@ -185,6 +186,46 @@ export default function home() {
                     </div>
 
                     <img src={Employers} alt=""/>
+                </div>
+            
+                <div className="bottega-difference-section-wrapper">
+                    <div className="bottega-difference-section-content">
+                        <span>The Bottega Difference</span>
+                        <h2>Current Tech & Lifelong Learning</h2>
+                        <div className="bottega-difference-lists">
+                            <div className="bottega-difference-list-block">
+                                <span>Customized Curriculum</span>
+                                <ul>
+                                    <li>Created by Subject-Matter Experts</li>
+                                    <li>Individualized Learning Paths</li>
+                                    <li>Industry Specific Pathways</li>
+                                    <li>Dynamic Classroom Delivery</li>
+                                </ul>
+                            </div>
+
+                            <div className="bottega-difference-list-block">
+                                <span>Immersive Program</span>
+                                <ul>
+                                    <li>In-Person & Remote Learning Options</li>
+                                    <li>Instructor & Mentor Support</li>
+                                    <li>Student Project Collaboration</li>
+                                    <li>Competency Based Education</li>
+                                </ul>
+                            </div>
+
+                            <div className="bottega-difference-list-block">
+                                <span>Career Services</span>
+                                <ul>
+                                    <li>Resume & Interview Preparation</li>
+                                    <li>Online Job Placement Resources</li>
+                                    <li>Advisor Support Beyond Graduation</li>
+                                    <li>Continued Learning & Professional Training</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bottega-difference-img" style={{backgroundImage: `url(${BottegaDifference})`}} />
                 </div>
             </div>
         </div>
