@@ -540,3 +540,115 @@
         background-position: center;
     }
 }
+
+.testimonials-section-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+
+    .testimonials-section-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .testimonials-description-wrapper {
+            width: 278px;
+            padding-right: 65px;
+
+            h3 {
+                font-size: 18.7px;
+                font-weight: 400;
+                margin-bottom: 8px;
+                line-height: 34px;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: 'Nunito Sans', sans-serif;
+                font-weight: 300;
+                opacity: .75;
+                line-height: 30px;
+                padding-bottom: 27px;
+            }
+
+            .testimonials-button {
+                width: 140px;
+                height: 50px;
+                background-color: $green;
+                margin-top: 30px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 700;
+                    width: 140px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    
+        .testimonials-display-wrapper {
+            width: 625px;
+            height: 445px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+
+            .testimonials-blocks-wrapper {
+                width: 2960px;
+                display: flex;
+                justify-content: space-between;
+                transition: all .45s cubic-bezier(0.25,1,0.33,1);                
+
+                .testimonials-block {
+                    margin-right: 100px;
+                    width: 560px;
+                    height: 380px;
+                    border: 1px solid rgba(0,0,0,.1);
+                    border-radius: 10px;
+                    padding: 30px;
+
+                    p {
+                        margin: 25px 0px;
+                        font-size: 18px;
+                        line-height: 37px;
+                        font-weight: 500;
+                    }
+
+                    .testimonial-author {
+                        display: flex;
+                        align-items: center;
+
+                        .author-img {
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 100%;
+                            background-size: cover;
+                            background-position: center;
+                        }
+
+                        .author-text {
+                            margin-left: 20px;
+                            display: flex;
+                            flex-direction: column;
+
+                            .name {
+                                font-size: 16px;
+                                font-weight: 500;
+                                margin-bottom: 3px;
+                            }
+
+                            .location {
+                                color: rgba(0,0,0,.5);
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
