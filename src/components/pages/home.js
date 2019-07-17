@@ -31,6 +31,11 @@ export default function home() {
         }
     })
 
+    const handleTestimonialSelectorClick = (num) => {
+        // clearInterval(updateTestimonial)
+        setTestimonial(num)
+    }
+
     return (
         <div className="home">
             <Header />
@@ -306,6 +311,24 @@ export default function home() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                
+                    <div className="testimonials-selectors">
+                        <div className="selector-wrapper" onClick={() => handleTestimonialSelectorClick(0)}>
+                            <div className={testimonial === 0 ? "selector-big" : "selector"} />
+                        </div>
+
+                        <div className="selector-wrapper" onClick={() => handleTestimonialSelectorClick(1)}>
+                            <div className={testimonial === 1 ? "selector-big" : "selector"} />
+                        </div>
+
+                        <div className="selector-wrapper" onClick={() => handleTestimonialSelectorClick(2)}>
+                            <div className={testimonial === 2 ? "selector-big" : "selector"} />
+                        </div>
+
+                        <div className="selector-wrapper" onClick={() => handleTestimonialSelectorClick(3)}>
+                            <div className={testimonial === 3 ? "selector-big" : "selector"} />
                         </div>
                     </div>
                 </div>

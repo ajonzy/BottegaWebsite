@@ -543,7 +543,8 @@
 
 .testimonials-section-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 130px;
 
     .testimonials-section-content {
@@ -648,6 +649,39 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .testimonials-selectors {
+        height: 30px;
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 90px;
+
+        .selector-wrapper {
+            height: 30px;
+            width: 30px;
+            margin: 0px 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            .selector {
+                background-color: $darkGrey;
+                height: 6px;
+                width: 6px;
+                border-radius: 100%;
+                transition: all 0.2s ease;                
+            }
+
+            .selector-big {
+                border: 2px solid black;
+                border-radius: 100%;
+                height: 8px;
+                width: 8px;
+                transition: all 0.2s ease;
             }
         }
     }
