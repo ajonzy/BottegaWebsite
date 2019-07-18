@@ -707,3 +707,40 @@
         }
     }
 }
+
+.legal-section-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .legal-section-content {
+        width: 870px;
+        height: 155px;;
+
+        ol {
+            color: #b1b1b1;
+
+            h6 {
+                color: black;
+                font-size: 14px;
+                font-family: 'Nunito Sans', sans-serif;
+                line-height: 20px;
+
+                a {
+                    color: $green;
+                    text-decoration: none;
+                    transition: .2s;
+
+                    &:hover {
+                        color: black;
+                    }
+                }
+
+                em {
+                    font-size: 16px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
