@@ -1,5 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link } from "react-router-dom"
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"
 
 import Header from "../resources/headerMain"
 
@@ -13,8 +16,29 @@ import RubyRails from "../../../static/assets/images/homepage/Ruby-Rails.png"
 import BottegaVideo from "../../../static/assets/images/homepage/Bottega-video.mp4"
 import Quotes from "../../../static/assets/images/homepage/quotes.png"
 import Employers from "../../../static/assets/images/homepage/employers.png"
+import BottegaDifference from "../../../static/assets/images/homepage/bottega-difference.jpg"
+import Quotes2 from "../../../static/assets/images/homepage/quotes2.png"
+import Testimonial1 from "../../../static/assets/images/homepage/testimonial1.jpg"
+import Testimonial2 from "../../../static/assets/images/homepage/testimonial2.jpg"
+import Testimonial3 from "../../../static/assets/images/homepage/testimonial3.jpg"
+import Testimonial4 from "../../../static/assets/images/homepage/testimonial4.jpg"
 
 export default function home() {
+    const [testimonial, setTestimonial] = useState(0)
+    const updateTestimonial = useRef(-1)
+
+    useEffect(() => {
+        updateTestimonial.current = updateTestimonial.current === -1 ? setInterval(() => setTestimonial(testimonial === 3 ? 0 : testimonial + 1), 7000) : 0
+
+        return () => {
+            clearInterval(updateTestimonial.current)
+        }
+    })
+
+    const handleTestimonialSelectorClick = (num) => {
+        clearInterval(updateTestimonial.current)
+        setTestimonial(num)
+    }
 
     return (
         <div className="home">
@@ -185,6 +209,142 @@ export default function home() {
                     </div>
 
                     <img src={Employers} alt=""/>
+                </div>
+            
+                <div className="bottega-difference-section-wrapper">
+                    <div className="bottega-difference-section-content">
+                        <span>The Bottega Difference</span>
+                        <h2>Current Tech & Lifelong Learning</h2>
+                        <div className="bottega-difference-lists">
+                            <div className="bottega-difference-list-block">
+                                <span>Customized Curriculum</span>
+                                <ul>
+                                    <li>Created by Subject-Matter Experts</li>
+                                    <li>Individualized Learning Paths</li>
+                                    <li>Industry Specific Pathways</li>
+                                    <li>Dynamic Classroom Delivery</li>
+                                </ul>
+                            </div>
+
+                            <div className="bottega-difference-list-block">
+                                <span>Immersive Program</span>
+                                <ul>
+                                    <li>In-Person & Remote Learning Options</li>
+                                    <li>Instructor & Mentor Support</li>
+                                    <li>Student Project Collaboration</li>
+                                    <li>Competency Based Education</li>
+                                </ul>
+                            </div>
+
+                            <div className="bottega-difference-list-block">
+                                <span>Career Services</span>
+                                <ul>
+                                    <li>Resume & Interview Preparation</li>
+                                    <li>Online Job Placement Resources</li>
+                                    <li>Advisor Support Beyond Graduation</li>
+                                    <li>Continued Learning & Professional Training</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bottega-difference-img" style={{backgroundImage: `url(${BottegaDifference})`}} />
+                </div>
+            
+                <div className="testimonials-section-wrapper">
+                    <div className="testimonials-section-content">
+                        <div className="testimonials-description-wrapper">
+                            <h3>Check Out Our Students Who Are Ready To Hit The Market Running</h3>
+                            <p>We care about the outcome of our students. We do everything we can to help their success.</p>
+                            <div className="testimonials-button">
+                                <a href="http://talent.bottega.tech/">Students<span className="hover-arrow"><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
+                            </div>
+                        </div>
+
+                        <div className="testimonials-display-wrapper">
+                            <div className="testimonials-blocks-wrapper" style={{transform: `translateX(-${722 * testimonial}px)`}}>
+                                <div className="testimonials-block">
+                                    <img src={Quotes2} alt=""/>
+                                    <p>Bottega is definitely something to get involved in. They have amazing teachers that really help you understand what to do in coding. The information is very thorough. The staff will help and work with you every way possible because they know this program is worth your time and effort for a better career. I love bottega and can't give enough great reviews about it and would recommend it to anyone. </p>
+                                    <div className="testimonial-author">
+                                        <div className="author-img" style={{backgroundImage: `url(${Testimonial1})`}} />
+
+                                        <div className="author-text">
+                                            <span className="name">Michael Hettich</span>
+                                            <span className="location">Full Stack - Lehi, UT</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="testimonials-block">
+                                    <img src={Quotes2} alt=""/>
+                                    <p>What can I say.... This place offers a first class education from people with amazing amounts of knowledge. The instructors are great to work with. The transformation I have seen in myself and everyone else in my cohort has been incredible. From day one to where I am now with a little over 6 weeks left, I feel as if I have finally found something not that I can just do but something I'm ment to do. Bottega tech is amazing. </p>
+                                    <div className="testimonial-author">
+                                        <div className="author-img" style={{backgroundImage: `url(${Testimonial2})`}} /> 
+
+                                        <div className="author-text">
+                                            <span className="name">Levi Smith</span>
+                                            <span className="location">Full Stack - Lehi, UT</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="testimonials-block">
+                                    <img src={Quotes2} alt=""/>
+                                    <p>Awesome program! I have learned so much since I've been here. For the tuition I paid I feel like I've gotten ten fold the knowledge! This has been a real game changer in my life and I'm glad I made the choice to come here. </p>
+                                    <div className="testimonial-author">
+                                        <div className="author-img" style={{backgroundImage: `url(${Testimonial3})`}} /> 
+                                        
+                                        <div className="author-text">
+                                            <span className="name">Dan Coley</span>
+                                            <span className="location">Full Stack - Lehi, UT</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="testimonials-block">
+                                    <img src={Quotes2} alt=""/>
+                                    <p>I came in not knowing anything about development. After only a short couple months the growth has been wild. The content is very easy to understand and there is alwasy an instructor to answer any questions or walk you through any issues you are having. Very fun, driven, and layed back group. We have alot of fun but do a ton of work while we are doing it. </p>
+                                    <div className="testimonial-author">
+                                        <div className="author-img" style={{backgroundImage: `url(${Testimonial4})`}} /> 
+
+                                        <div className="author-text">
+                                            <span className="name">Christoph M</span>
+                                            <span className="location">Full Stack - Lehi, UT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div className="testimonials-selectors">
+                        <div className="selector-wrapper" onClick={() => handleTestimonialSelectorClick(0)}>
+                            <div className={testimonial === 0 ? "selector-big" : "selector"} />
+                        </div>
+
+                        <div className="selector-wrapper" onClick={() => handleTestimonialSelectorClick(1)}>
+                            <div className={testimonial === 1 ? "selector-big" : "selector"} />
+                        </div>
+
+                        <div className="selector-wrapper" onClick={() => handleTestimonialSelectorClick(2)}>
+                            <div className={testimonial === 2 ? "selector-big" : "selector"} />
+                        </div>
+
+                        <div className="selector-wrapper" onClick={() => handleTestimonialSelectorClick(3)}>
+                            <div className={testimonial === 3 ? "selector-big" : "selector"} />
+                        </div>
+                    </div>
+                </div>
+            
+                <div className="legal-section-wrapper">
+                    <div className="legal-section-content">
+                        <ol>
+                            <li>
+                                <h6>Bottega is Accredited by the Northwest Accreditation Commission |&nbsp;<a href="http://www.advanc-ed.org/oasis2/u/par/accreditation/summary?institutionId=50382"><span class="s1">AdvancED</span></a>&nbsp;as a Post-Secondary non-degree granting school. AdvancED is a private accreditation body and <strong><em>not recognized by the U.S. Department of Education</em></strong>. Additionally, Bottega received CREDIT recommendation recognition through the&nbsp;<a href="http://www.acenet.edu/news-room/Pages/National-Guide-to-College-Credit-for-Workforce-Training.aspx"><span class="s1">American Council on Education</span></a>&nbsp;to provide CS credit and transcript service through ACE. Explore the benefits of having current curriculum and receive both your industry credential and a path to college credit.</h6>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
