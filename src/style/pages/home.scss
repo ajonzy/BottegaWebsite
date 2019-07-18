@@ -577,6 +577,7 @@
                 height: 50px;
                 background-color: $green;
                 margin-top: 30px;
+                transition: .2s;
 
                 a {
                     color: white;
@@ -587,6 +588,26 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
+                    .hover-arrow {
+                        width: 0;
+                        overflow: hidden;
+                        transition: .2s;
+                        -webkit-transform:scaleX(2); /* Safari and Chrome */
+                        -moz-transform:scaleX(2); /* Firefox */
+                        -ms-transform:scaleX(2); /* IE 9 */
+                        -o-transform:scaleX(2); /* Opera */
+                        transform:scaleX(2); /* W3C */
+                    }
+                }
+
+                &:hover {
+                    opacity: .87;
+                }
+
+                &:hover .hover-arrow {
+                    width: auto;
+                    margin-left: 20px;
                 }
             }
         }

@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link } from "react-router-dom"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"
+
 import Header from "../resources/headerMain"
 
 import CollegeCredit from "../../../static/assets/images/homepage/college-credit.png"
@@ -254,7 +257,7 @@ export default function home() {
                             <h3>Check Out Our Students Who Are Ready To Hit The Market Running</h3>
                             <p>We care about the outcome of our students. We do everything we can to help their success.</p>
                             <div className="testimonials-button">
-                                <a href="http://talent.bottega.tech/">Students</a>
+                                <a href="http://talent.bottega.tech/">Students<span className="hover-arrow"><FontAwesomeIcon icon={faLongArrowAltRight} /></span></a>
                             </div>
                         </div>
 
