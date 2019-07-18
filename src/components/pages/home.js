@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link } from "react-router-dom"
 
 import Header from "../resources/headerMain"
@@ -22,17 +22,18 @@ import Testimonial4 from "../../../static/assets/images/homepage/testimonial4.jp
 
 export default function home() {
     const [testimonial, setTestimonial] = useState(0)
+    const updateTestimonial = useRef(-1)
 
     useEffect(() => {
-        const updateTestimonial = setInterval(() => setTestimonial(testimonial === 3 ? 0 : testimonial + 1), 7000)
+        updateTestimonial.current = updateTestimonial.current === -1 ? setInterval(() => setTestimonial(testimonial === 3 ? 0 : testimonial + 1), 7000) : 0
 
         return () => {
-            clearInterval(updateTestimonial)
+            clearInterval(updateTestimonial.current)
         }
     })
 
     const handleTestimonialSelectorClick = (num) => {
-        // clearInterval(updateTestimonial)
+        clearInterval(updateTestimonial.current)
         setTestimonial(num)
     }
 
