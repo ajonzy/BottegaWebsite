@@ -24,7 +24,6 @@ export default function headerMain() {
             }
 
             didMountRef.current = true
-            console.log(sticky);
         }
     })
 
