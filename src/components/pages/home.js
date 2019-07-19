@@ -22,6 +22,11 @@ import Testimonial1 from "../../../static/assets/images/homepage/testimonial1.jp
 import Testimonial2 from "../../../static/assets/images/homepage/testimonial2.jpg"
 import Testimonial3 from "../../../static/assets/images/homepage/testimonial3.jpg"
 import Testimonial4 from "../../../static/assets/images/homepage/testimonial4.jpg"
+import ABCNews from "../../../static/assets/images/homepage/abcnews.png"
+import Forbes from "../../../static/assets/images/homepage/forbes.png"
+import KUTV from "../../../static/assets/images/homepage/kutv.png"
+import Telemundo from "../../../static/assets/images/homepage/telemundo.png"
+import YahooFinance from "../../../static/assets/images/homepage/yahoo-finance.png"
 
 export default function home() {
     const [testimonial, setTestimonial] = useState(0)
@@ -337,6 +342,72 @@ export default function home() {
                     </div>
                 </div>
             
+                <div className="news-sources-section-wrapper">
+                    <div className="news-sources-section-content">
+                        <div className="news-sources-banner">
+                            <div className="news-source">
+                                <a href="https://finance.yahoo.com/news/utahs-tech-outcomes-show-way-194500139.html">
+                                    <img src={YahooFinance} alt=""/>
+                                </a>
+                            </div>
+
+                            <div className="news-source">
+                                <a href="https://www.abc6.com/story/40687928/utah-doubles-down-on-solving-nations-tech-shortage">
+                                    <img src={ABCNews} alt=""/>
+                                </a>
+                            </div>
+
+                            <div className="news-source">
+                                <a href="http://www.kasa.com/story/40647153/bottega-to-train-5000-coding-foundations-apprentices-and-1000-full-stack-engineers-annually-in-jamaica-starting-in-2020">
+                                    <img src={Telemundo} alt=""/>
+                                </a>
+                            </div>
+
+                            <div className="news-source">
+                                <a href="https://www.forbes.com/sites/larrymyler/2017/04/25/how-a-solution-to-one-of-your-problems-could-be-your-next-business/#369bf3fd5ac5">
+                                    <img src={Forbes} alt=""/>
+                                </a>
+                            </div>
+
+                            <div className="news-source">
+                                <a href="http://kutv.com/news/2news-this-morning/live-with-casey-learning-to-code-with-bottega">
+                                    <img src={KUTV} alt=""/>
+                                </a>
+                            </div>
+
+                            <div className="news-source">
+                                <a href="https://finance.yahoo.com/news/utahs-tech-outcomes-show-way-194500139.html">
+                                    <img src={YahooFinance} alt=""/>
+                                </a>
+                            </div>
+
+                            <div className="news-source">
+                                <a href="https://www.abc6.com/story/40687928/utah-doubles-down-on-solving-nations-tech-shortage">
+                                    <img src={ABCNews} alt=""/>
+                                </a>
+                            </div>
+
+                            <div className="news-source">
+                                <a href="http://www.kasa.com/story/40647153/bottega-to-train-5000-coding-foundations-apprentices-and-1000-full-stack-engineers-annually-in-jamaica-starting-in-2020">
+                                    <img src={Telemundo} alt=""/>
+                                </a>
+                            </div>
+
+                            <div className="news-source">
+                                <a href="https://www.forbes.com/sites/larrymyler/2017/04/25/how-a-solution-to-one-of-your-problems-could-be-your-next-business/#369bf3fd5ac5">
+                                    <img src={Forbes} alt=""/>
+                                </a>
+                            </div>
+
+                            <div className="news-source">
+                                <a href="http://kutv.com/news/2news-this-morning/live-with-casey-learning-to-code-with-bottega">
+                                    <img src={KUTV} alt=""/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="legal-section-wrapper">
                     <div className="legal-section-content">
                         <ol>
