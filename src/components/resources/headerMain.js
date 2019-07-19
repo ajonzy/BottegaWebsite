@@ -48,7 +48,7 @@ export default function headerMain() {
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
                     </div>
-
+                    
                     <div className="questions-link">
                         <a href="https://calendly.com/bottega-advisors/phonecall">Have questions? Click here to schedule a call!</a>
                     </div>

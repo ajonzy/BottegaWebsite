@@ -28,9 +28,14 @@
                 background-color: $green;
                 display: flex;
                 align-items: center;
+                transition: .2s;
 
                 a {
                     padding: 15px;
+                }
+
+                &:hover {
+                    opacity: .87;
                 }
             }
         }
