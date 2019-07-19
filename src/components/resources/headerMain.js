@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,17 +8,23 @@ import { faSignInAlt, faScroll } from "@fortawesome/free-solid-svg-icons"
 import Logo from "../../../static/assets/images/bottega-logo-black.png"
 
 export default function headerMain() {
+    const didMountRef = useRef(false);
 
     useEffect(() => {
-        const navbar = document.getElementById("navbar");
-        const sticky = navbar.offsetTop;
-
-        window.onscroll = () => {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
+        if(didMountRef.current === false) {
+            const navbar = document.getElementById("navbar");
+            const sticky = navbar.offsetTop;
+            
+            window.onscroll = () => {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
             }
+
+            didMountRef.current = true
+            console.log(sticky);
         }
     })
 
