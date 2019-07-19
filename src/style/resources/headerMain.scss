@@ -28,9 +28,14 @@
                 background-color: $green;
                 display: flex;
                 align-items: center;
+                transition: .2s;
 
                 a {
                     padding: 15px;
+                }
+
+                &:hover {
+                    opacity: .87;
                 }
             }
         }
@@ -175,6 +180,27 @@
         }
     }
 
+    .header-back-arrow {
+        height: 60px;
+        width: 60px;
+        background-color: $green;
+        color: white;
+        font-size: 20px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        cursor: pointer;
+        visibility: hidden;
+        transition: all .5s cubic-bezier(.645,.045,.355,1);
+        transform: translateY(150%);
+        opacity: 0;
+        bottom: 50px;
+        right: 30px;
+    }
+
     .sticky {
         position: fixed;
         top: 0;
@@ -192,5 +218,12 @@
             opacity: 1;
             transform: translateY(0);
         } 
+    }
+
+    .sticky-arrow {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+        z-index: 1;
     }
 }
