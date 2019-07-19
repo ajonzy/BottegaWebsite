@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"
 
 import Header from "../resources/headerMain"
+import Footer from "../resources/footerMain"
 
 import CollegeCredit from "../../../static/assets/images/homepage/college-credit.png"
 import CourseDescription from "../../../static/assets/images/homepage/course-description.jpg"
@@ -418,6 +419,7 @@ export default function home() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
