@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { faSignInAlt, faScroll } from "@fortawesome/free-solid-svg-icons"
+import { faSignInAlt, faScroll, faArrowUp } from "@fortawesome/free-solid-svg-icons"
 
 import Logo from "../../../static/assets/images/bottega-logo-black.png"
 
@@ -13,13 +13,17 @@ export default function headerMain() {
     useEffect(() => {
         if(didMountRef.current === false) {
             const navbar = document.getElementById("navbar");
+            const arrow = document.getElementById("back-arrow");
+
             const sticky = navbar.offsetTop;
             
             window.onscroll = () => {
                 if (window.pageYOffset >= sticky) {
                     navbar.classList.add("sticky")
+                    arrow.classList.add("sticky-arrow")
                 } else {
                     navbar.classList.remove("sticky");
+                    arrow.classList.remove("sticky-arrow");
                 }
             }
 
@@ -129,6 +133,10 @@ export default function headerMain() {
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwgZ5RogSsCaYhs9vbDev8Olu6-mUHB8Rt_wgeIENfL37jwQ/viewform?usp=sf_link">Jamaica&nbsp;Applicants</a>
                     </div>
                 </div>
+            </div>
+        
+            <div className="header-back-arrow" id="back-arrow" onClick={() => window.scrollTo({left: 0, top: 0, behavior: 'smooth'})}>
+                <FontAwesomeIcon icon={faArrowUp} />
             </div>
         </div>
     )
