@@ -1,13 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {useRoutes} from 'hookrouter';
 
 import Home from "./pages/home"
+import ScheduleCall from "./pages/scheduleCall"
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className='app'>
-        <Home />
-      </div>
-    );
-  }
+export default function app() {
+  const routes = {
+    "/": () => <Home />,
+    "/schedule-call": () => <ScheduleCall />
+  };
+  
+  const routeResult = useRoutes(routes)
+
+  return (
+    <div className='app'>
+      {routeResult}
+    </div>
+  );
 }

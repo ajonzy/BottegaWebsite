@@ -50,7 +50,7 @@ export default function headerMain() {
                     </div>
                     
                     <div className="questions-link">
-                        <a href="https://calendly.com/bottega-advisors/phonecall">Have questions? Click here to schedule a call!</a>
+                        <Link to="/schedule-call">Have questions? Click here to schedule a call!</Link>
                     </div>
                 </div>
             </div>
