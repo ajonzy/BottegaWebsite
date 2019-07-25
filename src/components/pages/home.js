@@ -19,6 +19,7 @@ import Quotes from "../../../static/assets/images/homepage/quotes.png"
 import Employers from "../../../static/assets/images/homepage/employers.png"
 import BottegaDifference from "../../../static/assets/images/homepage/bottega-difference.jpg"
 import Quotes2 from "../../../static/assets/images/homepage/quotes2.png"
+import Quotes3 from "../../../static/assets/images/homepage/quotes3.png"
 import Testimonial1 from "../../../static/assets/images/homepage/testimonial1.jpg"
 import Testimonial2 from "../../../static/assets/images/homepage/testimonial2.jpg"
 import Testimonial3 from "../../../static/assets/images/homepage/testimonial3.jpg"
@@ -271,7 +272,10 @@ export default function home() {
                         <div className="testimonials-display-wrapper">
                             <div className="testimonials-blocks-wrapper" style={{transform: `translateX(-${722 * testimonial}px)`}}>
                                 <div className="testimonials-block">
-                                    <img src={Quotes2} alt=""/>
+                                    <div className="quotes-images-wrapper">
+                                        <img src={Quotes3} alt=""/>
+                                        <img src={Quotes2} alt=""/>
+                                    </div>
                                     <p>Bottega is definitely something to get involved in. They have amazing teachers that really help you understand what to do in coding. The information is very thorough. The staff will help and work with you every way possible because they know this program is worth your time and effort for a better career. I love bottega and can't give enough great reviews about it and would recommend it to anyone. </p>
                                     <div className="testimonial-author">
                                         <div className="author-img" style={{backgroundImage: `url(${Testimonial1})`}} />
@@ -284,7 +288,10 @@ export default function home() {
                                 </div>
 
                                 <div className="testimonials-block">
-                                    <img src={Quotes2} alt=""/>
+                                    <div className="quotes-images-wrapper">
+                                        <img src={Quotes3} alt=""/>
+                                        <img src={Quotes2} alt=""/>
+                                    </div>
                                     <p>What can I say.... This place offers a first class education from people with amazing amounts of knowledge. The instructors are great to work with. The transformation I have seen in myself and everyone else in my cohort has been incredible. From day one to where I am now with a little over 6 weeks left, I feel as if I have finally found something not that I can just do but something I'm ment to do. Bottega tech is amazing. </p>
                                     <div className="testimonial-author">
                                         <div className="author-img" style={{backgroundImage: `url(${Testimonial2})`}} /> 
@@ -297,7 +304,10 @@ export default function home() {
                                 </div>
 
                                 <div className="testimonials-block">
-                                    <img src={Quotes2} alt=""/>
+                                    <div className="quotes-images-wrapper">
+                                        <img src={Quotes3} alt=""/>
+                                        <img src={Quotes2} alt=""/>
+                                    </div>
                                     <p>Awesome program! I have learned so much since I've been here. For the tuition I paid I feel like I've gotten ten fold the knowledge! This has been a real game changer in my life and I'm glad I made the choice to come here. </p>
                                     <div className="testimonial-author">
                                         <div className="author-img" style={{backgroundImage: `url(${Testimonial3})`}} /> 
@@ -310,7 +320,10 @@ export default function home() {
                                 </div>
 
                                 <div className="testimonials-block">
-                                    <img src={Quotes2} alt=""/>
+                                    <div className="quotes-images-wrapper">
+                                        <img src={Quotes3} alt=""/>
+                                        <img src={Quotes2} alt=""/>
+                                    </div>
                                     <p>I came in not knowing anything about development. After only a short couple months the growth has been wild. The content is very easy to understand and there is alwasy an instructor to answer any questions or walk you through any issues you are having. Very fun, driven, and layed back group. We have alot of fun but do a ton of work while we are doing it. </p>
                                     <div className="testimonial-author">
                                         <div className="author-img" style={{backgroundImage: `url(${Testimonial4})`}} /> 
