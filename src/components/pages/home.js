@@ -6,6 +6,7 @@ import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"
 
 import Header from "../resources/headerMain"
 import Footer from "../resources/footerMain"
+import HeaderVideo from "../resources/headerVideo"
 
 import CollegeCredit from "../../../static/assets/images/homepage/college-credit.png"
 import CourseDescription from "../../../static/assets/images/homepage/course-description.jpg"
@@ -52,13 +53,11 @@ export default function home() {
         <div className="home">
             <Header />
             <div className="home-content-wrapper">
-                <div className="video-display-wrapper">
-                    <video width="100%" height="100%" src={BottegaVideo} preload="auto" loop autoPlay muted></video>          
-                    <div className="video-display-text">
-                        <h1>Coding Skills<br/>To Get You Hired</h1>
-                        <h4>Bottega’s best in class curriculum delivers programs that are backed by The American College of Education (<a href="http://www2.acenet.edu/credit/?fuseaction=browse.getOrganizationDetail&amp;FICE=1009331">ACE</a>). This accreditation recommends college credit be awarded for Bottega courses at many universities.</h4>
-                    </div>          
-                </div>
+                <HeaderVideo 
+                    video={BottegaVideo} 
+                    header={<h1>Coding Skills<br/>To Get You Hired</h1>} 
+                    subHeader={<h4>Bottega’s best in class curriculum delivers programs that are backed by The American College of Education (<a href="http://www2.acenet.edu/credit/?fuseaction=browse.getOrganizationDetail&amp;FICE=1009331">ACE</a>). This accreditation recommends college credit be awarded for Bottega courses at many universities.</h4>} 
+                />
 
                 <div className="course-display-section-wrapper">
                     <div className="course-display-header">
