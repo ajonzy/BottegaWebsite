@@ -31,10 +31,10 @@ import YahooFinance from "../../../static/assets/images/homepage/yahoo-finance.p
 
 export default function home() {
     const [testimonial, setTestimonial] = useState(0)
-    const updateTestimonial = useRef(-1)
+    const updateTestimonial = useRef()
 
     useEffect(() => {
-        updateTestimonial.current = updateTestimonial.current === -1 ? setInterval(() => setTestimonial(testimonial === 3 ? 0 : testimonial + 1), 7000) : 0
+        updateTestimonial.current = updateTestimonial.current !== -1 ? setInterval(() => setTestimonial(testimonial === 3 ? 0 : testimonial + 1), 7000) : -1
 
         return () => {
             clearInterval(updateTestimonial.current)
@@ -43,6 +43,7 @@ export default function home() {
 
     const handleTestimonialSelectorClick = (num) => {
         clearInterval(updateTestimonial.current)
+        updateTestimonial.current = -1
         setTestimonial(num)
     }
 
