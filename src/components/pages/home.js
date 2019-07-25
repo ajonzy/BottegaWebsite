@@ -55,8 +55,8 @@ export default function home() {
             <div className="home-content-wrapper">
                 <HeaderVideo 
                     video={BottegaVideo} 
-                    header={<h1>Coding Skills<br/>To Get You Hired</h1>} 
-                    subHeader={<h4>Bottega’s best in class curriculum delivers programs that are backed by The American College of Education (<a href="http://www2.acenet.edu/credit/?fuseaction=browse.getOrganizationDetail&amp;FICE=1009331">ACE</a>). This accreditation recommends college credit be awarded for Bottega courses at many universities.</h4>} 
+                    header={<h1 style={{marginBottom: "22px"}}>Coding Skills<br/>To Get You Hired</h1>} 
+                    subHeader={<h4 style={{fontFamily: "'Roboto Mono', monospace", fontSize: "19px", fontWeight: "300"}}>Bottega’s best in class curriculum delivers programs<br/>that are backed by The American College of Education<br/>(<a href="http://www2.acenet.edu/credit/?fuseaction=browse.getOrganizationDetail&amp;FICE=1009331">ACE</a>). This accreditation recommends college credit be<br/>awarded for Bottega courses at many universities.</h4>} 
                 />
 
                 <div className="course-display-section-wrapper">
