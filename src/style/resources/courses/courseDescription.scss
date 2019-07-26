@@ -1,0 +1,29 @@
+.course-description {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .course-description-content {
+        width: 1077px;
+        display: flex;
+        justify-content: space-between;
+
+        .content-block {
+            padding: 32px;
+            width: 280px;
+
+            h3 {
+                font-size: 18.7px;
+                font-weight: 400;
+                margin-top: 20px;
+            }
+
+            h4 {
+                font-size: 19px;
+                font-weight: 300;
+                opacity: .65;
+                margin-top: 25px;
+            }
+        }
+    }
+}
