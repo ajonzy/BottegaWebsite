@@ -1,0 +1,102 @@
+.dates-and-options {
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+
+    .dates-and-options-content-wrapper{
+        width: 1077px;
+        margin-bottom: 60px;
+
+        h2 {
+            font-size: 25.5px;
+            font-weight: 500;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+
+        .content-block {
+            display: flex;
+            width: 100%;
+            background-color: white;
+            border: 1px solid rgba(0,0,0,.1);
+            border-radius: 4px;
+            margin-top: 25px;
+            padding: 21.5px;
+
+            .date-content {
+                width: 575px;
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 18.7px;
+                    font-weight: 500;
+                }
+
+                span {
+                    font-size: 16px;
+                    margin-top: 8px;
+                    font-weight: 300;
+                    font-family: 'Nunito Sans', sans-serif;
+                }
+
+                .span-one {
+                    color: #dec802;
+                }
+
+                .span-two {
+                    color: $green;
+                }
+
+                a {
+                    width: 87px; 
+                    margin-top: 23px;
+                    margin-bottom: 10px; 
+                }
+
+                button {
+                    background-color: $green;
+                    border: none;
+                    color: white;
+                    font-weight: 700;
+                    height: 40px;
+                    width: 87px;
+                    cursor: pointer;
+                    transition: .2s;
+
+                    &:hover {
+                        opacity: .87;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .parttime-learn-more {
+                    color: black;
+                    font-weight: 700;
+                    font-size: 16px;
+                    font-family: 'Nunito Sans', sans-serif;
+                    margin-top: 8px;
+                    margin-bottom: 0px;
+                }
+            }
+
+            .options-content {
+                margin-left: 44px;
+
+                p {
+                    color: #999999;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-size: 16px;
+                    margin-bottom: 8px;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
