@@ -35,10 +35,6 @@ export default function courseDescription(props) {
         const contentLocation = contentClasses[0].offsetTop - 300
 
         window.onscroll = () => {
-            console.log(imageLocation)
-            console.log(headerLocation)
-            console.log(contentLocation)
-            console.log(window.pageYOffset)
             if (window.pageYOffset >= imageLocation) {
                 for (const image of imageClasses){ image.classList.add("triggered") }
             } 
