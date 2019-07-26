@@ -11,11 +11,21 @@
         .content-block {
             padding: 32px;
             width: 280px;
+            height: 500px;
+
+            img {
+                visibility: hidden;
+                transform: translateY(100px);
+                transition: all .45s cubic-bezier(.645,.045,.355,1);
+            }
 
             h3 {
                 font-size: 18.7px;
                 font-weight: 400;
                 margin-top: 20px;
+                visibility: hidden;
+                transform: translateY(100px);
+                transition: all .45s cubic-bezier(.645,.045,.355,1);
             }
 
             h4 {
@@ -23,6 +33,16 @@
                 font-weight: 300;
                 opacity: .65;
                 margin-top: 25px;
+                width: 280px;
+                visibility: hidden;
+                transform: translateY(100px);
+                transition: all .45s cubic-bezier(.645,.045,.355,1);
+            }
+
+            .triggered {
+                // opacity: 1;
+                visibility: visible;
+                transform: translateY(0px);
             }
         }
     }
