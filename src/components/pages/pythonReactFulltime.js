@@ -6,6 +6,7 @@ import HeaderVideo from "../resources/headerVideo"
 import SyllabusDownload from "../resources/courses/syllabusDownload"
 import CourseDescription from "../resources/courses/courseDescription"
 import DatesAndOptions from "../resources/courses/datesAndOptions"
+import ApplicationProcess from "../resources/courses/applicationProcess"
 
 import FulltimeVideo from "../../../static/assets/images/pythonReactCourses/fulltimeVideo.mp4"
 import Syllabus from "../../../static/assets/downloads/FulltimeSyllabus.pdf"
@@ -24,6 +25,7 @@ export default function pythonReactFulltime() {
                 <SyllabusDownload syllabus={Syllabus} />
                 <CourseDescription course="fulltime" />
                 <DatesAndOptions />
+                <ApplicationProcess />
             </div>
             <Footer />
         </div>
