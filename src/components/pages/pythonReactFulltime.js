@@ -8,6 +8,7 @@ import CourseDescription from "../resources/courses/courseDescription"
 import DatesAndOptions from "../resources/courses/datesAndOptions"
 import ApplicationProcess from "../resources/courses/applicationProcess"
 import TuitionCalculator from "../resources/courses/tuitionCalculator"
+import EmployableSkillset from "../resources/courses/employableSkillset"
 
 import FulltimeVideo from "../../../static/assets/images/pythonReactCourses/fulltimeVideo.mp4"
 import Syllabus from "../../../static/assets/downloads/FulltimeSyllabus.pdf"
@@ -28,6 +29,7 @@ export default function pythonReactFulltime() {
                 <DatesAndOptions />
                 <ApplicationProcess />
                 <TuitionCalculator />
+                <EmployableSkillset />
             </div>
             <Footer />
         </div>
