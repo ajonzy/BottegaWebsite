@@ -17,7 +17,7 @@ export default function headerMain() {
 
             const sticky = navbar.offsetTop;
             
-            window.onscroll = () => {
+            window.addEventListener("scroll", () => {
                 if (window.pageYOffset >= sticky) {
                     navbar.classList.add("sticky")
                     arrow.classList.add("sticky-arrow")
@@ -25,7 +25,7 @@ export default function headerMain() {
                     navbar.classList.remove("sticky");
                     arrow.classList.remove("sticky-arrow");
                 }
-            }
+            })
 
             didMountRef.current = true
         }

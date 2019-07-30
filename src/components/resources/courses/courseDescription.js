@@ -34,7 +34,7 @@ export default function courseDescription(props) {
         const headerLocation = headerClasses[0].offsetTop - 500
         const contentLocation = contentClasses[0].offsetTop - 300
 
-        window.onscroll = () => {
+        window.addEventListener("scroll", () => {
             if (window.pageYOffset >= imageLocation) {
                 for (const image of imageClasses){ image.classList.add("triggered") }
             } 
@@ -44,7 +44,7 @@ export default function courseDescription(props) {
             if (window.pageYOffset >= contentLocation) {
                 for (const content of contentClasses){ content.classList.add("triggered") }
             }
-        }
+        })
     })
 
     return (

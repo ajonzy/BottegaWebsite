@@ -37,13 +37,13 @@ export default function employableSkillset() {
                 if (javascriptJobTracker%36900 < 90) { javascriptJobTracker += 10 }
                 setJavascriptJobs(javascriptJobTracker)
             }
-        }, 100);
+        }, 70);
 
-        window.onscroll = () => {
+        window.addEventListener("scroll", () => {
             if (window.pageYOffset >= jobsBlocksLocation) {
                 jobsUpdater.current = true
             }
-        }
+        })
 
         return(() => {
             clearInterval(updateJobs)
