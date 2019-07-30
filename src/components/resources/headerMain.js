@@ -17,7 +17,7 @@ export default function headerMain() {
 
             const sticky = navbar.offsetTop;
             
-            window.onscroll = () => {
+            window.addEventListener("scroll", () => {
                 if (window.pageYOffset >= sticky) {
                     navbar.classList.add("sticky")
                     arrow.classList.add("sticky-arrow")
@@ -25,7 +25,7 @@ export default function headerMain() {
                     navbar.classList.remove("sticky");
                     arrow.classList.remove("sticky-arrow");
                 }
-            }
+            })
 
             didMountRef.current = true
         }
@@ -50,7 +50,7 @@ export default function headerMain() {
                     </div>
                     
                     <div className="questions-link">
-                        <a href="https://calendly.com/bottega-advisors/phonecall">Have questions? Click here to schedule a call!</a>
+                        <Link to="/schedule-call">Have questions? Click here to schedule a call!</Link>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,46 @@
+.application-process {
+    display: flex;
+    justify-content: center;
+
+    .application-process-content-wrapper {
+        width: 1077px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 25.5px;
+            font-weight: 400;
+        }
+
+        .application-process-content-blocks {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+
+            .content-block {
+                width: 222px;
+
+                h3 {
+                    color: #949494;
+                    font-size: 24px;
+                    font-family: 'Nunito Sans', sans-serif;
+                }
+
+                h5 {
+                    margin-top: 16px;
+                    font-size: 24px;
+                    font-family: 'Nunito Sans', sans-serif;
+                    line-height: 1.25;
+                }
+
+                p {
+                    margin-top: 7px;
+                    font-size: 16px;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 300;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

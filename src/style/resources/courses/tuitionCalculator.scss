@@ -1,0 +1,38 @@
+.tuition-calculator {
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+
+    .tuition-calculator-content-wrapper {
+        width: 1077px;
+        margin-top: 90px;
+        margin-bottom: 90px;
+
+        h2 {
+            font-size: 25.5px;
+            font-weight: 400;
+            margin-bottom: 45px;
+        }
+
+        p {
+            width: 435px;
+            font-size: 16px;
+            font-family: 'Nunito Sans', sans-serif;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+
+        a {
+            background-color: $green;
+            color: white;
+            padding: 15px 22px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: .2s;
+
+            &:hover {
+                opacity: .87;
+            }
+        }
+    }
+}

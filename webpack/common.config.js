@@ -23,7 +23,7 @@ module.exports = {
 
       {
         type: 'javascript/auto',
-        test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
+        test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2|pdf)$/,
         loader: 'file-loader',
         options: {
           name: '[path][name].[ext]',
