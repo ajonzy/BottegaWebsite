@@ -10,8 +10,9 @@ export default function employableSkillset() {
     const jobsUpdater = useRef(false)
 
     useEffect(() => {
+        console.log(window.innerHeight)
         const jobsBlocks = document.getElementById("jobs-blocks")
-        const jobsBlocksLocation = jobsBlocks.offsetTop - 472
+        const jobsBlocksLocation = jobsBlocks.offsetTop - window.innerHeight
 
         const updateJobs = setInterval(() => {
             if (jobsUpdater.current === true) {
@@ -37,7 +38,7 @@ export default function employableSkillset() {
                 if (javascriptJobTracker%36900 < 90) { javascriptJobTracker += 10 }
                 setJavascriptJobs(javascriptJobTracker)
             }
-        }, 70);
+        }, 30);
 
         window.addEventListener("scroll", () => {
             if (window.pageYOffset >= jobsBlocksLocation) {

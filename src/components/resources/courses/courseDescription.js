@@ -30,11 +30,12 @@ export default function courseDescription(props) {
         const headerClasses = document.getElementsByClassName("course-description-header")
         const contentClasses = document.getElementsByClassName("course-description-content")
 
-        const imageLocation = imageClasses[0].offsetTop - 500
-        const headerLocation = headerClasses[0].offsetTop - 500
-        const contentLocation = contentClasses[0].offsetTop - 300
+        const imageLocation = imageClasses[0].offsetTop - window.innerHeight + 17
+        const headerLocation = headerClasses[0].offsetTop - window.innerHeight + 17
+        const contentLocation = contentClasses[0].offsetTop - window.innerHeight + 217
 
         window.addEventListener("scroll", () => {
+            console.log(window.innerHeight)
             if (window.pageYOffset >= imageLocation) {
                 for (const image of imageClasses){ image.classList.add("triggered") }
             } 
