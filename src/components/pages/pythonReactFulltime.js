@@ -11,6 +11,7 @@ import TuitionCalculator from "../resources/courses/tuitionCalculator"
 import EmployableSkillset from "../resources/courses/employableSkillset"
 import LearningExperience from "../resources/courses/learningExperience"
 import DontWaitBanner from "../resources/courses/dontWaitBanner"
+import LanguageSummaries from "../resources/courses/languageSummaries"
 
 import FulltimeVideo from "../../../static/assets/images/pythonReactCourses/fulltimeVideo.mp4"
 import Syllabus from "../../../static/assets/downloads/FulltimeSyllabus.pdf"
@@ -34,6 +35,7 @@ export default function pythonReactFulltime() {
                 <EmployableSkillset />
                 <LearningExperience />
                 <DontWaitBanner />
+                <LanguageSummaries />
             </div>
             <Footer />
         </div>
