@@ -35,7 +35,6 @@ export default function courseDescription(props) {
         const contentLocation = contentClasses[0].offsetTop - window.innerHeight + 217
 
         window.addEventListener("scroll", () => {
-            console.log(window.innerHeight)
             if (window.pageYOffset >= imageLocation) {
                 for (const image of imageClasses){ image.classList.add("triggered") }
             } 

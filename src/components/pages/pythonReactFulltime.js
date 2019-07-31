@@ -12,6 +12,7 @@ import EmployableSkillset from "../resources/courses/employableSkillset"
 import LearningExperience from "../resources/courses/learningExperience"
 import DontWaitBanner from "../resources/courses/dontWaitBanner"
 import LanguageSummaries from "../resources/courses/languageSummaries"
+import CourseCurriculum from "../resources/courses/courseCurriculum"
 
 import FulltimeVideo from "../../../static/assets/images/pythonReactCourses/fulltimeVideo.mp4"
 import Syllabus from "../../../static/assets/downloads/FulltimeSyllabus.pdf"
@@ -36,6 +37,7 @@ export default function pythonReactFulltime() {
                 <LearningExperience />
                 <DontWaitBanner />
                 <LanguageSummaries />
+                <CourseCurriculum course="main" />
             </div>
             <Footer />
         </div>

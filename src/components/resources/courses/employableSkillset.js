@@ -10,7 +10,6 @@ export default function employableSkillset() {
     const jobsUpdater = useRef(false)
 
     useEffect(() => {
-        console.log(window.innerHeight)
         const jobsBlocks = document.getElementById("jobs-blocks")
         const jobsBlocksLocation = jobsBlocks.offsetTop - window.innerHeight
 
