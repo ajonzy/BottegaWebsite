@@ -6,6 +6,7 @@ import ScheduleCall from "./pages/scheduleCall"
 import PythonReactFulltime from "./pages/pythonReactFulltime"
 import PythonReactFulltimeRemote from "./pages/pythonReactFulltimeRemote"
 import PythonReactParttime from "./pages/pythonReactParttime"
+import FrontEndParttime from "./pages/frontEndParttime"
 
 export default function app() {
   const routes = {
@@ -13,7 +14,8 @@ export default function app() {
     "/schedule-call": () => <ScheduleCall />,
     "/python-react-full-time": () => <PythonReactFulltime />,
     "/python-react-full-time-remote": () => <PythonReactFulltimeRemote />,
-    "/python-react-part-time": () => <PythonReactParttime />
+    "/python-react-part-time": () => <PythonReactParttime />,
+    "/front-end-part-time": () => <FrontEndParttime />
   };
   
   const routeResult = useRoutes(routes)

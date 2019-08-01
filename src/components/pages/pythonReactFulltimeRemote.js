@@ -34,12 +34,12 @@ export default function pythonReactFulltimeRemote() {
                 <SyllabusDownload syllabus={Syllabus} />
                 <CourseDescription course="remote" />
                 <DatesAndOptions />
-                <ApplicationProcess />
+                <ApplicationProcess course="fulltime" />
                 <TuitionCalculator course="main" />
                 <EmployableSkillset />
                 <LearningExperience />
                 <DontWaitBanner />
-                <LanguageSummaries />
+                <LanguageSummaries course="main" />
                 <CourseCurriculum course="main" />
                 <DailySchedule />
                 <CourseFAQ course="fulltime" />
