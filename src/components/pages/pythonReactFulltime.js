@@ -35,14 +35,14 @@ export default function pythonReactFulltime() {
                 <CourseDescription course="fulltime" />
                 <DatesAndOptions />
                 <ApplicationProcess />
-                <TuitionCalculator />
+                <TuitionCalculator course="main" />
                 <EmployableSkillset />
                 <LearningExperience />
                 <DontWaitBanner />
                 <LanguageSummaries />
                 <CourseCurriculum course="main" />
                 <DailySchedule />
-                <CourseFAQ />
+                <CourseFAQ course="fulltime" />
                 <LegalBanner />
             </div>
             <Footer />
