@@ -1,0 +1,57 @@
+.daily-schedule {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+
+    .daily-schedule-content-wrapper {
+        width: 1077px;
+
+        h2 {
+            font-size: 25.5px;
+            font-weight: 400;
+            margin-bottom: 25px;
+            visibility: hidden;
+            transform: translateY(100px);
+            transition: all .45s cubic-bezier(.645,.045,.355,1);
+        }
+
+        p {
+            font-size: 16px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 300;
+            line-height: 30px;
+            opacity: .65;
+            width: 522px;
+            margin-bottom: 80px;
+            visibility: hidden;
+            transform: translateY(100px);
+            transition: all .45s cubic-bezier(.645,.045,.355,1);
+        }
+
+        .schedule-content-blocks-wrapper {
+            visibility: hidden;
+            transform: translateY(100px);
+            transition: all .45s cubic-bezier(.645,.045,.355,1);
+
+            .content-block {
+                display: grid;
+                grid-template-columns: 256px 256px 511px;
+                border-bottom: 1px solid rgba(0,0,0,.2);
+                padding: 22px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .triggered {
+            visibility: visible;
+            transform: translateY(0px);
+        }
+    }
+}

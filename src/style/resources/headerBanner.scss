@@ -1,4 +1,4 @@
-.video-display-wrapper {
+.banner-display-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,15 +8,15 @@
     width: 100%;
     overflow: hidden;
     background-color: black;
+    background-size: cover;
+    background-position: center;
 
-    video {
+    img {
         object-fit: cover;
-        object-position: 0px 20%;
-        -ms-transform: scaleX(2); //For IE
         opacity: .6;
     }
 
-    .video-display-text {
+    .banner-display-text {
         width: 706px;
         position: absolute;
         color: white;

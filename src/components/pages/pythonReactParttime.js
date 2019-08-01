@@ -2,11 +2,10 @@ import React from 'react'
 
 import Header from "../resources/headerMain"
 import Footer from "../resources/footerMain"
-import HeaderVideo from "../resources/headerVideo"
+import HeaderBanner from "../resources/headerBanner"
 import LegalBanner from "../resources/legalBanner"
 import SyllabusDownload from "../resources/courses/syllabusDownload"
 import CourseDescription from "../resources/courses/courseDescription"
-import DatesAndOptions from "../resources/courses/datesAndOptions"
 import ApplicationProcess from "../resources/courses/applicationProcess"
 import TuitionCalculator from "../resources/courses/tuitionCalculator"
 import EmployableSkillset from "../resources/courses/employableSkillset"
@@ -14,35 +13,33 @@ import LearningExperience from "../resources/courses/learningExperience"
 import DontWaitBanner from "../resources/courses/dontWaitBanner"
 import LanguageSummaries from "../resources/courses/languageSummaries"
 import CourseCurriculum from "../resources/courses/courseCurriculum"
-import DailySchedule from "../resources/courses/dailySchedule"
 import CourseFAQ from "../resources/courses/courseFAQ"
 
-import FulltimeVideo from "../../../static/assets/images/pythonReactCourses/fulltimeVideo.mp4"
-import Syllabus from "../../../static/assets/downloads/FulltimeSyllabus.pdf"
+import ParttimeBanner from "../../../static/assets/images/pythonReactCourses/parttime-header-image.jpg"
+import Syllabus from "../../../static/assets/downloads/ParttimeSyllabus.pdf"
 
-export default function pythonReactFulltime() {
+export default function pythonReactFulltimeRemote() {
     return (
-        <div className="python-react-fulltime">
+        <div className="python-react-fulltime-remote">
             <Header />
-            <div className="python-react-fulltime-content-wrapper">
-                <HeaderVideo 
-                    video={FulltimeVideo}
-                    superHeader={<h5>Full Stack Development (Full-Time)</h5>}
-                    header={<h1>In Demand Skills Python 3<br/>and React.js</h1>}
-                    subHeader={<h4>Beginner or not, you’ll gain skillsets aimed to get you hired by learning<br/>two of the most in-demand and employable programming languages in<br/>the industry.</h4>}
+            <div className="python-react-fulltime-remote-content-wrapper">
+                <HeaderBanner 
+                    banner={ParttimeBanner}
+                    superHeader={<h5>Full Stack Development (Part-Time)</h5>}
+                    header={<h1>Remote Python 3 and<br/>React Course</h1>}
+                    subHeader={<h4>Remote online learning anytime anywhere. <br/>Get trained on three of the most in-demand coding <br/>technologies in computer science; Python, React & JavaScript.</h4>}
                 />
                 <SyllabusDownload syllabus={Syllabus} />
-                <CourseDescription course="fulltime" />
-                <DatesAndOptions />
-                <ApplicationProcess course="fulltime" />
-                <TuitionCalculator course="main" />
+                <CourseDescription course="parttime" />
+                <ApplicationProcess course="parttime" />
+                <TuitionCalculator course="mainParttime"/>
                 <EmployableSkillset />
                 <LearningExperience />
                 <DontWaitBanner />
                 <LanguageSummaries course="main" />
                 <CourseCurriculum course="main" />
-                <DailySchedule />
-                <CourseFAQ course="fulltime" />
+                <div className="seperator" style={{height: "80px"}} />
+                <CourseFAQ course="parttime" />
                 <LegalBanner />
             </div>
             <Footer />
