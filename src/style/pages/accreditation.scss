@@ -1,0 +1,64 @@
+.accreditation {
+    .accreditation-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .header-banner {
+            align-self: stretch;
+        }
+
+        .accreditation-explaination-content-wrapper {
+            width: 1077px;
+            display: flex;
+            justify-content: space-between;
+
+            sup {
+                font-size: 10px;
+            }
+
+            .explaination-text-content {
+                margin-top: 80px;
+                width: 614px;
+
+                h3 {
+                    font-size: 18.7px;
+                    font-weight: 400;
+                    line-height: 34px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 300;
+                    font-family: 'Nunito Sans', sans-serif;
+                    line-height: 30px;
+                }
+
+                .explaination-content-blocks-wrapper {
+                    margin-top: 80px;
+
+                    .content-block {
+                        display: flex;
+                        margin-bottom: 60px;
+
+                        p {
+                            width: 433px;
+                        }
+
+                        img {
+                            margin-right: 40px;
+                        }
+                    }
+                }
+            }
+
+            .explaination-image {
+                margin-top: 50px;
+
+                img {
+                    width: 327px;
+                }
+            }
+        }
+    }
+}
