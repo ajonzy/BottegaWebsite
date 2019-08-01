@@ -3,6 +3,7 @@ import React from 'react'
 import Header from "../resources/headerMain"
 import Footer from "../resources/footerMain"
 import HeaderVideo from "../resources/headerVideo"
+import LegalBanner from "../resources/legalBanner"
 import SyllabusDownload from "../resources/courses/syllabusDownload"
 import CourseDescription from "../resources/courses/courseDescription"
 import DatesAndOptions from "../resources/courses/datesAndOptions"
@@ -42,6 +43,7 @@ export default function pythonReactFulltime() {
                 <CourseCurriculum course="main" />
                 <DailySchedule />
                 <CourseFAQ />
+                <LegalBanner />
             </div>
             <Footer />
         </div>
