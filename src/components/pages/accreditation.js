@@ -3,6 +3,7 @@ import React from 'react'
 import Header from "../resources/headerMain"
 import Footer from "../resources/footerMain"
 import HeaderBanner from "../resources/headerBanner"
+import LegalBanner from "../resources/legalBanner"
 
 import ExplainationImage from "../../../static/assets/images/accreditation/accreditation-description.jpg"
 import AdvancEDLogo from "../../../static/assets/images/accreditation/AdvancED_logo.png"
@@ -56,6 +57,16 @@ export default function accreditation() {
 
                     <div className="accreditation-banner-background"style={{backgroundImage: `url(${BannerBackground})`}} />
                 </div>
+            
+                <div className="accreditation-benefits-content-wrapper">
+                    <div className="accreditation-benefits-content">
+                        <h3>What Benefit Does Accreditation<sup>1</sup> Serve?</h3>
+                        <p>While accreditation<sup>1</sup> is a set of rigorous protocols and research-based processes for evaluating an institution’s organizational effectiveness, it is far more than that. Today accreditation<sup>1</sup> examines the whole institution—the programs, the cultural context, the community of stakeholders—to determine how well the parts work together to meet the needs of students.</p>
+                        <p>Accreditation<sup>1</sup> is inextricably linked to institution and educational system improvement. The accreditation<sup>1</sup> process asks institutions and systems to critically evaluate their vision, strategies, priorities, leadership, and programs and resources. The process of earning and maintaining accreditation<sup>1</sup> provides institutions and educational systems with clear and compelling direction for implementing changes to move toward excellence.</p>
+                    </div>
+                </div>
+
+                <LegalBanner />
             </div>
             <Footer />
         </div>
