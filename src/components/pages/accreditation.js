@@ -7,6 +7,7 @@ import HeaderBanner from "../resources/headerBanner"
 import ExplainationImage from "../../../static/assets/images/accreditation/accreditation-description.jpg"
 import AdvancEDLogo from "../../../static/assets/images/accreditation/AdvancED_logo.png"
 import ACELogo from "../../../static/assets/images/accreditation/ACE_Logo.png"
+import BannerBackground from "../../../static/assets/images/accreditation/accreditation-banner.jpg"
 
 export default function accreditation() {
     return (
@@ -39,6 +40,21 @@ export default function accreditation() {
                     <div className="explaination-image">
                         <img src={ExplainationImage} alt=""/>
                     </div>
+                </div>
+
+                <div className="accreditation-banner">
+                    <div className="accreditiation-banner-content">
+                        <div className="banner-text">
+                            <h3>Gain A Better Education</h3>
+                            <p>Accreditation<sup>1</sup> requires ensuring the curriculum meets a certain quality standard. You, as a student, benefit from the teaching practices and procedures that allow us to retain our accreditation<sup>1</sup>.</p>
+                        </div>
+
+                        <div className="banner-button">
+                            <a href="#">View Curriculumn</a> {/* TODO: Build curriculum page */}
+                        </div>
+                    </div>
+
+                    <div className="accreditation-banner-background"style={{backgroundImage: `url(${BannerBackground})`}} />
                 </div>
             </div>
             <Footer />
