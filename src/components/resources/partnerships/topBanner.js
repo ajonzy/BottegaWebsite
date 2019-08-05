@@ -4,7 +4,7 @@ import BannerImage from "../../../../static/assets/images/partnerships/top-banne
 
 export default function topBanner(props) {
     useEffect(() => {
-        const button = document.getElementById("button")
+        const button = document.getElementById("top-partner-banner-button")
 
         const buttonLocation = button.offsetTop
 
@@ -20,7 +20,7 @@ export default function topBanner(props) {
             <div className="top-banner-content-wrapper">
                 <div className="top-banner-content">
                     <h3>University Partnerships</h3>
-                    <a href="#UniversityPartners" id="button">Partner with Bottega</a>
+                    <a href="#UniversityPartners" id="top-partner-banner-button">Partner with Bottega</a>
                 </div>
             </div>
         )
