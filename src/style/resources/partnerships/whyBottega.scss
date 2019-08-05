@@ -1,0 +1,78 @@
+.why-bottega {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    margin-bottom: 160px;
+
+    .why-bottega-content-wrapper {
+        width: 1077px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .content-header {
+            opacity: 0;
+            transform: translateY(100%);
+            transition: .45s cubic-bezier(.645,.045,.355,1);
+        }
+
+        .triggered {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .what-content {
+            text-align: center;
+            width: 636px;
+            margin-bottom: 160px;
+        }
+
+        h2 {
+            font-size: 25.5px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            font-family: 'Nunito Sans', sans-serif;
+            line-height: 30px;
+        }
+
+        .why-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .why-content-blocks-wrapper {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .content-block {
+                    margin-top: 31px;
+                    width: 471px;
+                    padding: 29px;
+                    
+                    h4 {
+                        font-size: 19px;
+                        font-weight: 400;
+                        color: $green;
+                        margin-bottom: 8px;
+                    }
+
+                    li {
+                        font-size: 16px;
+                        font-family: 'Nunito Sans', sans-serif;
+                        font-weight: 300;
+                        line-height: 30px;
+
+                        sup {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
