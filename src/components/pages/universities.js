@@ -6,6 +6,7 @@ import HeaderPartnerships from "../resources/partnerships/headerPartnerships"
 import TopBanner from "../resources/partnerships/topBanner"
 import WhyBottega from "../resources/partnerships/whyBottega"
 import MidBanner from "../resources/partnerships/midBanner"
+import UnivesityPartners from "../resources/partnerships/universityPartners"
 
 export default function universities() {
     return (
@@ -16,6 +17,7 @@ export default function universities() {
                 <TopBanner partner="university" />
                 <WhyBottega partner="university" />
                 <MidBanner />
+                <UnivesityPartners /> 
             </div>
             <Footer />
         </div>
