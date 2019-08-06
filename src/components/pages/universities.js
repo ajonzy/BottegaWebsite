@@ -8,6 +8,7 @@ import WhyBottega from "../resources/partnerships/whyBottega"
 import MidBanner from "../resources/partnerships/midBanner"
 import UnivesityPartners from "../resources/partnerships/universityPartners"
 import UnivesityTestimonials from "../resources/partnerships/universityTestimonials"
+import SocialPartners from "../resources/partnerships/socialPartners"
 
 export default function universities() {
     return (
@@ -20,6 +21,7 @@ export default function universities() {
                 <MidBanner />
                 <UnivesityPartners /> 
                 <UnivesityTestimonials /> 
+                <SocialPartners />
             </div>
             <Footer />
         </div>
