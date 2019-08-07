@@ -9,6 +9,7 @@ import PythonReactParttime from "./pages/pythonReactParttime"
 import FrontEndParttime from "./pages/frontEndParttime"
 import Accreditation from "./pages/accreditation"
 import Universities from "./pages/universities"
+import InstructorEndorsements from "./pages/instructorEndorsements"
 
 export default function app() {
   const routes = {
@@ -19,7 +20,8 @@ export default function app() {
     "/python-react-part-time": () => <PythonReactParttime />,
     "/front-end-part-time": () => <FrontEndParttime />,
     "/accreditation": () => <Accreditation />,
-    "/universities": () => <Universities />
+    "/universities": () => <Universities />,
+    "/instructor-endorsements": () => <InstructorEndorsements />
   };
   
   const routeResult = useRoutes(routes)
