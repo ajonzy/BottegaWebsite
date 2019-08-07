@@ -14,8 +14,8 @@ export default function instructorEndorsements() {
             <Header />
             <div className="universities-content-wrapper">
                 <HeaderPartnerships partner="instructor" />
-                {/* <TopBanner partner="instructor" /> */}
-                {/* <WhyBottega partner="instructor" /> */}
+                <TopBanner partner="instructor" />
+                <WhyBottega partner="instructor" />
 
                 <LegalBanner />
             </div>

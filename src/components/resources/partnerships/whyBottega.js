@@ -63,6 +63,31 @@ export default function whyBottega(props) {
                     </div>
                 </div>
             </div>
+        ),
+        instructor: (
+            <div className="why-bottega-content-wrapper">
+                <div className="why-content">
+                    <h2 className="content-header">Why Bottega Is Right For Your Endorsement</h2>
+
+                    <div className="why-content-blocks-wrapper">
+                        <div className="content-block-instructor">
+                            <ul>
+                                <li>One of the hottest new education companies and it’s a Utah startup!</li>
+                                <li>Bottega believes in the importance of public education and is investing in Utah teachers.</li>
+                                <li>Learn using the same new technology training platform that is becoming standard across many Utah classrooms</li>
+                            </ul>
+                        </div>
+
+                        <div className="content-block-instructor">
+                            <ul>
+                                <li>Use the same platform in your own classroom for better student outcomes</li>
+                                <li>Get live help from real developers when you get stuck on the materials… <span className="colored">for you and your students!</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+            </div>
         )
     }
     return (

@@ -4,6 +4,11 @@
     margin-top: 140px;
     margin-bottom: 160px;
 
+    hr {
+        width: 1025px;
+        opacity: .3;
+    }
+
     .why-bottega-content-wrapper {
         width: 1077px;
         display: flex;
@@ -70,6 +75,27 @@
                         sup {
                             font-size: 10px;
                         }
+                    }
+                }
+
+                .content-block-instructor {
+                    margin-top: 31px;
+                    width: 471px;
+                    padding: 29px;
+                    margin-bottom: 80px;
+
+                    li {
+                        font-size: 18px;
+                        font-family: 'Nunito Sans', sans-serif;
+                        line-height: 30px;
+                        margin-bottom: 20px;
+                        width: 414px;
+                    }
+
+                    .colored {
+                        color: $green;
+                        font-style: italic;
+                        font-family: 'Nunito Sans', sans-serif;
                     }
                 }
             }

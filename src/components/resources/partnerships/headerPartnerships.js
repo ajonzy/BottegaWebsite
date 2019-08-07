@@ -1,6 +1,7 @@
 import React from 'react'
 
 import UniversityHeaderImage from "../../../../static/assets/images/partnerships/university-partnership-header.jpg"
+import InstructorHeaderImage from "../../../../static/assets/images/partnerships/instructor-header-image.png"
 
 export default function headerPartnerships(props) {
     const headerContent = {
@@ -15,6 +16,18 @@ export default function headerPartnerships(props) {
 
                 <div className="header-image">
                     <img src={UniversityHeaderImage} style={{width: "327px", height: "434px"}} alt=""/>
+                </div>
+            </div>
+        ),
+        instructor: (
+            <div className="header-partnerships-content-wrapper">
+                <div className="header-text">
+                    <h2 style={{marginTop: "30px"}}>Utah Instructor Endorsements</h2>
+                    <p style={{color: "#888", width: "502px"}}>Bottega has made it convenient for teachers to get endorsed in partnership with the Utah State Board of Education. Our endorsement program is available online, on your time and with Bottega mentor support. Receive current instruction and industry specific training to boost your students experience and education.</p>
+                </div>
+
+                <div className="header-image">
+                    <img src={InstructorHeaderImage} style={{marginLeft: "95px"}} alt=""/>
                 </div>
             </div>
         )
