@@ -9,6 +9,7 @@ import MidBanner from "../resources/partnerships/midBanner"
 import UnivesityPartners from "../resources/partnerships/universityPartners"
 import UnivesityTestimonials from "../resources/partnerships/universityTestimonials"
 import SocialPartners from "../resources/partnerships/socialPartners"
+import PartnerForm from "../resources/partnerships/universityPartnerForm"
 
 export default function universities() {
     return (
@@ -22,6 +23,7 @@ export default function universities() {
                 <UnivesityPartners /> 
                 <UnivesityTestimonials /> 
                 <SocialPartners />
+                <PartnerForm />
             </div>
             <Footer />
         </div>
