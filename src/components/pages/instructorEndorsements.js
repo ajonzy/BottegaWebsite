@@ -6,6 +6,7 @@ import HeaderPartnerships from "../resources/partnerships/headerPartnerships"
 import TopBanner from "../resources/partnerships/topBanner"
 import WhyBottega from "../resources/partnerships/whyBottega"
 import CodeToSuccess from "../resources/partnerships/codeToSuccess"
+import InstructorEndorsementForm from "../resources/partnerships/instructorEndorsementForm"
 
 import LegalBanner from "../resources/legalBanner"
 
@@ -18,6 +19,7 @@ export default function instructorEndorsements() {
                 <TopBanner partner="instructor" />
                 <WhyBottega partner="instructor" />
                 <CodeToSuccess />
+                <InstructorEndorsementForm />
                 <LegalBanner />
             </div>
             <Footer />
