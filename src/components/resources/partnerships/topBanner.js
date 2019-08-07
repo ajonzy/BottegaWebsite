@@ -12,8 +12,6 @@ export default function topBanner(props) {
         const buttonLocation = button.getBoundingClientRect().top
 
         window.addEventListener("scroll", () => {
-            console.log(buttonLocation - window.innerHeight);
-            console.log(window.pageYOffset);
             if (window.pageYOffset >= (buttonLocation - window.innerHeight)) {
                 button.classList.add("triggered")
             }

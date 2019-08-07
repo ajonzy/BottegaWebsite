@@ -1,0 +1,39 @@
+.code-to-success {
+    display: flex;
+    justify-content: center;
+
+    .code-to-success-content-wrapper {
+        width: 1205;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 25.5px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 18.7px;
+            font-weight: 400;
+            color: $darkGrey;
+            margin-bottom: 80px;
+        }
+        
+        .animated {
+            opacity: 0;
+            transform: translateY(100px);
+            transition: .45s cubic-bezier(.645,.045,.355,1);
+        }
+
+        .triggered {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
