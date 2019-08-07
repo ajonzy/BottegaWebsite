@@ -1,3 +1,4 @@
+// TODO Hook up form to email
 import React, {useState} from 'react'
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -15,7 +16,7 @@ export default function universityPartnerForm() {
                 </div>
 
                 <div className="partner-form">
-                    <form>
+                    <form> 
                         <h6>Please fill out the fields below to get started.</h6>
                         <div className="name-inputs">
                             <input type="text" placeholder="First Name"/>
