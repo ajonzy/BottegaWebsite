@@ -20,7 +20,7 @@ export default function topBanner(props) {
             <div className="top-banner-content-wrapper">
                 <div className="top-banner-content">
                     <h3>University Partnerships</h3>
-                    <a href="#UniversityPartners" id="top-partner-banner-button">Partner with Bottega</a>
+                    <a href="#Form" id="top-partner-banner-button">Partner with Bottega</a>
                 </div>
             </div>
         )

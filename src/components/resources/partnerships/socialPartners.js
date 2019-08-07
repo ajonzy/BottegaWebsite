@@ -20,7 +20,7 @@ export default function socialPartners() {
                     <p style={partner === "healTheHeroFoundation" ? {opacity: "1", zIndex: "1"} : null}>Heal the Hero Foundation, a public charity, has partnered with Bottega to provide scholarships to qualified Veteran students and other individuals. Scholarship participants receive a credentialed program designed to improve mental focus, optimal brain performance/productivity and emotional/mental balance. The program’s aim is to support the student’s potential to succeed in his/her studies and ultimate employment.</p>
                     <p style={partner === "OPIF" ? {opacity: "1", zIndex: "1"} : null}>Operation Pay it Forward, which operates as a 501(c)(3), and Bottega have partnered to offer courses and activities to build community and provide education for Veterans. Through this partnership, Veterans are able to build skills and move into an exciting career in Software Development.</p>
                 </div>
-                <hr/>
+                <hr id="Form"/>
             </div>
         </div>
     )

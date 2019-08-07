@@ -10,6 +10,7 @@ import UnivesityPartners from "../resources/partnerships/universityPartners"
 import UnivesityTestimonials from "../resources/partnerships/universityTestimonials"
 import SocialPartners from "../resources/partnerships/socialPartners"
 import PartnerForm from "../resources/partnerships/universityPartnerForm"
+import LegalBanner from "../resources/legalBanner"
 
 export default function universities() {
     return (
@@ -24,6 +25,7 @@ export default function universities() {
                 <UnivesityTestimonials /> 
                 <SocialPartners />
                 <PartnerForm />
+                <LegalBanner />
             </div>
             <Footer />
         </div>
