@@ -1,0 +1,31 @@
+.university-partners {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    .university-partners-content-wrapper {
+        width: 1077px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .university-partners-element {
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .triggered {
+            opacity: 1;
+        }
+
+        h2 {
+            font-size: 25.5px;
+            font-weight: 500;
+            margin-bottom: 120px;
+        }
+
+        img {
+            margin-bottom: 150px;
+        }
+    }
+}

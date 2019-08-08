@@ -1,0 +1,151 @@
+.accreditation {
+    .accreditation-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .header-banner {
+            align-self: stretch;
+        }
+
+        .accreditation-explaination-content-wrapper {
+            width: 1077px;
+            display: flex;
+            justify-content: space-between;
+
+            sup {
+                font-size: 10px;
+            }
+
+            .explaination-text-content {
+                margin-top: 80px;
+                width: 614px;
+
+                h3 {
+                    font-size: 18.7px;
+                    font-weight: 400;
+                    line-height: 34px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 300;
+                    font-family: 'Nunito Sans', sans-serif;
+                    line-height: 30px;
+                }
+
+                .explaination-content-blocks-wrapper {
+                    margin-top: 80px;
+
+                    .content-block {
+                        display: flex;
+                        margin-bottom: 60px;
+
+                        p {
+                            width: 433px;
+                        }
+
+                        img {
+                            margin-right: 40px;
+                        }
+                    }
+                }
+            }
+
+            .explaination-image {
+                margin-top: 50px;
+
+                img {
+                    width: 327px;
+                }
+            }
+        }
+
+        .accreditation-banner {
+            height: 261px;
+            align-self: stretch;
+            display: flex;
+            justify-content: center;
+            background-color: #0e2f3f;
+            position: relative;
+
+            .accreditiation-banner-content {
+                width: 1077px;
+                padding: 60px 0px;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 1;
+
+                h3 {
+                    font-size: 18.7px;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 700;  
+                    margin-bottom: 20px;                  
+                }
+
+                p {
+                    font-size: 16px;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 400;
+                    line-height: 30px;
+                    width: 510px;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 700;
+                    padding: 21px 40px;
+                    border: 4px solid rgba(255,255,255,.75);
+                    transition: .2s;
+
+                    &:hover {
+                        border: 4px solid white;
+                    }
+                }
+            }
+
+            .accreditation-banner-background {
+                height: 261px;
+                width: 100%;
+                position: absolute;
+                opacity: .2;
+                background-position: center;
+                background-size: cover;
+                z-index: 0;
+            }
+        }
+
+        .accreditation-benefits-content-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            // margin-bottom: 80px;
+
+            .accreditation-benefits-content {
+                width: 1077px;
+
+                h3 {
+                    font-size: 18.7px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 300;
+                    line-height: 30px;
+                    margin-bottom: 30px;
+                }
+
+                sup {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

@@ -103,34 +103,39 @@ export default function headerMain() {
                         </div>
                     </div>
 
-                    <div className="nav-link" style={{width: "80.8px"}}>
-                        <Link to="/outcomes">Outcomes&nbsp;<span className="dropdown-arrow">&#x02C5;</span></Link>
-                        <div className="nav-dropdown" style={{width: "85px"}}>
-                            <Link to="/employer-list">Employer&nbsp;List</Link>
+                    <div className="nav-link">
+                        <Link to="/accreditation">Accreditation</Link>
+                    </div>
+
+                    <div className="nav-link" style={{width: "95px"}}>
+                        <Link to="/universities">Partnerships<span className="dropdown-arrow">&#x02C5;</span></Link>
+                        <div className="nav-dropdown" style={{width: "73px"}}>
+                            <Link to="/universities">Universities</Link>
+                            <Link to="/instructor-endorsements">Instructor&nbsp;Endorsements</Link>
                         </div>
                     </div>
 
                     <div className="nav-link">
-                        <Link to="/instructor-endorsements">Instructor&nbsp;Endorsements</Link>
+                        <a href="http://talent.bottega.tech/">Bottega&nbsp;Talent</a>
                     </div>
 
-                    <div className="nav-link" style={{width: "134.1px"}}>
-                        <Link to="/university-partners">University&nbsp;Partners&nbsp;<span className="dropdown-arrow">&#x02C5;</span></Link>
-                        <div className="nav-dropdown" style={{width: "73px"}}>
-                            <Link to="/universities">Universities</Link>
-                        </div>
+                    <div className="nav-link">
+                        <a href="https://press.bottega.tech/">Bottega&nbsp;Press</a>
                     </div>
 
                     <div className="nav-link">
                         <Link to="/veterans">Veterans</Link>
                     </div>
 
-                    <div className="nav-link">
-                        <a href="https://press.bottega.tech/">Press</a>
+                    <div className="nav-link" style={{width: "95px"}}>
+                        <div className="nav-link-dropdown">International<span className="dropdown-arrow">&#x02C5;</span></div>
+                        <div className="nav-dropdown" style={{width: "73px"}}>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwgZ5RogSsCaYhs9vbDev8Olu6-mUHB8Rt_wgeIENfL37jwQ/viewform?usp=sf_link">Jamaica&nbsp;Applicants</a>
+                            <a href="https://inmob.bottega.tech/">Mexico&nbsp;Applicants</a>                            
+                        </div>
                     </div>
 
                     <div className="nav-link">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwgZ5RogSsCaYhs9vbDev8Olu6-mUHB8Rt_wgeIENfL37jwQ/viewform?usp=sf_link">Jamaica&nbsp;Applicants</a>
                     </div>
                 </div>
             </div>
