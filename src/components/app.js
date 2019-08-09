@@ -7,6 +7,7 @@ import PythonReactFulltime from "./pages/pythonReactFulltime"
 import PythonReactFulltimeRemote from "./pages/pythonReactFulltimeRemote"
 import PythonReactParttime from "./pages/pythonReactParttime"
 import FrontEndParttime from "./pages/frontEndParttime"
+import RubyParttime from "./pages/rubyParttime"
 import Accreditation from "./pages/accreditation"
 import Universities from "./pages/universities"
 import InstructorEndorsements from "./pages/instructorEndorsements"
@@ -20,6 +21,7 @@ export default function app() {
     "/python-react-full-time-remote": () => <PythonReactFulltimeRemote />,
     "/python-react-part-time": () => <PythonReactParttime />,
     "/front-end-part-time": () => <FrontEndParttime />,
+    "/ruby-part-time": () => <RubyParttime />,
     "/accreditation": () => <Accreditation />,
     "/universities": () => <Universities />,
     "/instructor-endorsements": () => <InstructorEndorsements />,

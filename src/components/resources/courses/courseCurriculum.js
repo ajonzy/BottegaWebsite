@@ -5,6 +5,9 @@ import FrontEndImage from "../../../../static/assets/images/pythonReactCourses/f
 import DatabaseImage from "../../../../static/assets/images/pythonReactCourses/database.png"
 import UMLImage from "../../../../static/assets/images/pythonReactCourses/uml.png"
 import WebApps from "../../../../static/assets/images/pythonReactCourses/webApps.png"
+import OOP from "../../../../static/assets/images/pythonReactCourses/object-oriented-programming.png"
+import AdvOOP from "../../../../static/assets/images/pythonReactCourses/adv-oop.png"
+import TDDBDD from "../../../../static/assets/images/pythonReactCourses/tdd-bdd.png"
 
 export default function courseCurriculum(props) {
     const curriculumContent = {
@@ -81,6 +84,54 @@ export default function courseCurriculum(props) {
                     <div className="content-text">
                         <h4>CS 497: Advanced Web Development</h4>
                         <p>Development of complex web applications, Including: web security, data markup languages, server side scripting, web database interactions, web service architectures, etc.</p>
+                        <p>May be delivered online. Recommended for 3.0 Credits.</p>
+                    </div>
+                </div>
+            </div>
+        ),
+        ruby: (
+            <div className="course-curriculumn-content-blocks-wrapper">
+                <div className="content-block">
+                    <img src={OOP} alt=""/>
+                    <div className="content-text">
+                        <h4>CS 277: Intro to Programming (Ruby)</h4>
+                        <p>Introduces fundamental concepts of object oriented programing; such as: classes, instantiation, inheritance, polymorphism, control flow constructs, algorithms, etc.</p>
+                        <p>May be delivered online. Recommended for 3.0 Credits. Prerequisite: <a href="https://rails.devcamp.com/prework">Free DevCamp PreWork</a></p>
+                    </div>
+                </div>
+
+                <div className="content-block">
+                    <img src={WebApps} alt=""/>
+                    <div className="content-text">
+                        <h4>CS 410: Web App Development (Rails)</h4>
+                        <p>Teaches proper web development methods using ruby on rails; such as: RESTful based routes, data flow, SQL database configuration & queries, and asset management.</p>
+                        <p>May be delivered online. Recommended for 3.0 Credits. Prerequisite: CS 277</p>
+                    </div>
+                </div>
+
+                <div className="content-block">
+                    <img src={AdvOOP} alt=""/>
+                    <div className="content-text">
+                        <h4>CS 384: Advanced OOP (Ruby)</h4>
+                        <p>Covers advanced Ruby concepts and techniques; including: file classes, CRUD, regular expressions, values, metaprogramming, API communicators, and machine learning algorithms.</p>
+                        <p>May be delivered online. Recommended for 3.0 Credits.</p>
+                    </div>
+                </div>
+
+                <div className="content-block">
+                    <img src={TDDBDD} alt=""/>
+                    <div className="content-text">
+                        <h4>CS 370: TDD/BDD</h4>
+                        <p>Build full web apps while following TTD/BDD workflow, working with testing frameworks, building test suites; and implementing mocks, stubs, and websocket components.</p>
+                        <p>May be delivered online. Recommended for 3.0 Credits.</p>
+                    </div>
+                </div>
+
+                <div className="content-block">
+                    <img src={WebApps} alt=""/>
+                    <div className="content-text">
+                        <h4>CS 497: Advanced Web Development (Rails)</h4>
+                        <p>Build a microservice based app proving understanding of: microservice architecture design, API communicators, token authentication, and multi-tenancy components.</p>
                         <p>May be delivered online. Recommended for 3.0 Credits.</p>
                     </div>
                 </div>

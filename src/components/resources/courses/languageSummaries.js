@@ -4,6 +4,8 @@ import PythonLogo from "../../../../static/assets/images/pythonReactCourses/pyth
 import ReactLogo from "../../../../static/assets/images/pythonReactCourses/react-logo.png"
 import HTML5Logo from "../../../../static/assets/images/pythonReactCourses/html5-logo.png"
 import CSS3Logo from "../../../../static/assets/images/pythonReactCourses/css3-logo.png"
+import RubyLogo from "../../../../static/assets/images/pythonReactCourses/ruby-logo.png"
+import RailsLogo from "../../../../static/assets/images/pythonReactCourses/rails-logo.png"
 
 
 export default function languageSummaries(props) {
@@ -78,6 +80,38 @@ export default function languageSummaries(props) {
                         <div className="summary-text">
                             <h4>React JS</h4>
                             <p>React is a powerful javascript library that allows developers to create both large and small web-applications.  It handles data dynamically and aims to provide speed, simplicity, and scalability to user interfaces in applications. React JS is a trending language that is in high demand with business owners.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        ),
+        ruby: (
+            <div className="language-summaries-content-wrapper">
+                <div className="language-summaries-description">
+                    <h2>Language Summaries</h2>
+                    <p>This Ruby track is geared towards experienced developers, however, the natural and easy syntax makes it fun for all students to learn; this is a large part of why Ruby has been popularized in recent years.</p>
+                </div>
+
+                <div className="language-summaries-content-blocks-wrapper">
+                    <div className="content-block">
+                        <div className="summary-image">
+                            <img src={RubyLogo} alt=""/>
+                        </div>
+
+                        <div className="summary-text">
+                            <h4>Ruby</h4>
+                            <p>Ruby is a dynamic, open source programming language that is grounded in simplicity and productivity; this mostly due to its syntax which is natural to read and easy to write. Ruby is a high-level, general purpose, object-oriented language that empowers developers to create applications to span many industries.</p>
+                        </div>
+                    </div>
+
+                    <div className="content-block">
+                        <div className="summary-image">
+                            <img src={RailsLogo} alt=""/>
+                        </div>
+
+                        <div className="summary-text">
+                            <h4>Ruby On Rails</h4>
+                            <p>Rails is a server-side web application framework written in the Ruby language. Rails is a model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages that encourages and facilitates the use of web standards.</p>
                         </div>
                     </div>
                 </div>

@@ -78,9 +78,9 @@ export default function home() {
                             </div>
 
                             <div className="learn-more-list">
-                                <Link to="/python-react-full-time/">Full Time On Campus</Link>
-                                <Link to="/python-react-part-time/">Part Time Remote</Link>
-                                <Link to="/python-react-full-time-remote/">Full Time Remote</Link>
+                                <Link to="/python-react-full-time">Full Time On Campus</Link>
+                                <Link to="/python-react-part-time">Part Time Remote</Link>
+                                <Link to="/python-react-full-time-remote">Full Time Remote</Link>
                             </div>
                         </div>
 
@@ -90,7 +90,7 @@ export default function home() {
                             <h6 className="course-subtitle">Beginner</h6>
                             <h5 className="course-description">Build visually, highly employable skills</h5>
                             <div className="course-button">
-                                <a href="/front-end-part-time/">Learn&nbsp;More</a>
+                                <Link to="/front-end-part-time">Learn&nbsp;More</Link>
                             </div>
                         </div>
 
@@ -100,7 +100,7 @@ export default function home() {
                             <h6 className="course-subtitle">Advanced</h6>
                             <h5 className="course-description">High paying salary, specialization</h5>
                             <div className="course-button">
-                                <a href="/ruby-full-stack-part-time-remote/">Learn&nbsp;More</a>
+                                <Link to="/ruby-part-time">Learn&nbsp;More</Link>
                             </div>
                         </div>
 
