@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import {useRoutes} from 'hookrouter';
 
 import Home from "./pages/home"
@@ -27,6 +27,16 @@ export default function app() {
   };
   
   const routeResult = useRoutes(routes)
+  const appLoaded = useRef(false)
+
+  useEffect(() => {
+    if (appLoaded.current === false) {
+      appLoaded.current = true
+    } 
+    else {
+      window.scrollTo(0, 0, "auto")
+    }
+  })
 
   return (
     <div className='app'>

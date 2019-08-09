@@ -18,12 +18,20 @@ export default function topBanner(props) {
         })
     })
 
+    const handleClick = () => {
+        event.preventDefault()
+
+        const form = document.getElementById("Form")
+
+        form.scrollIntoView({behavior: "smooth"})
+    }
+
     const bannerContent = {
         university: (
             <div className="top-banner-content-wrapper">
                 <div className="top-banner-content">
                     <h3>University Partnerships</h3>
-                    <a href="#Form" id="top-partner-banner-button">Partner with Bottega</a>
+                    <a href="#Form" id="top-partner-banner-button" onClick={handleClick}>Partner with Bottega</a>
                 </div>
             </div>
         ),
@@ -53,7 +61,7 @@ export default function topBanner(props) {
                             <h6>Certification: Computer Programming (CP) 1,<br/>Computer Science (CS) Principles,<br/>CS I, CP II, CS II, AP CS,<br/>Gaming Development Fundamentals,<br/>Mobile Development Fundamentals</h6>
                         </div>
                     </div>
-                    <a href="#Form" id="top-partner-banner-button">Get Endorsed by Bottega</a>
+                    <a href="#Form" id="top-partner-banner-button" onClick={handleClick}>Get Endorsed by Bottega</a>
                 </div>
             </div>
         )
