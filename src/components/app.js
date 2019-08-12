@@ -13,6 +13,7 @@ import Universities from "./pages/universities"
 import InstructorEndorsements from "./pages/instructorEndorsements"
 import Veterans from "./pages/veterans"
 import FAQ from "./pages/FAQ"
+import Contact from "./pages/contact"
 
 export default function app() {
   const routes = {
@@ -27,7 +28,8 @@ export default function app() {
     "/universities": () => <Universities />,
     "/instructor-endorsements": () => <InstructorEndorsements />,
     "/veterans": () => <Veterans />,
-    "/faq": () => <FAQ />
+    "/faq": () => <FAQ />,
+    "/contact": () => <Contact />
   };
   
   const routeResult = useRoutes(routes)
