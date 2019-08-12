@@ -173,8 +173,8 @@ export default function faqPage() {
                         <Link to="/contact">Contact Us</Link>
                     </div>
                 </div>
-                <LegalBanner />
             </div>
+            <LegalBanner />
             <Footer />
         </div>
     )
