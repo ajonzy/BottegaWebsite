@@ -14,6 +14,7 @@ import InstructorEndorsements from "./pages/instructorEndorsements"
 import Veterans from "./pages/veterans"
 import FAQ from "./pages/FAQ"
 import Contact from "./pages/contact"
+import PrivacyPolicy from "./pages/privacyPolicy"
 
 export default function app() {
   const routes = {
@@ -29,7 +30,8 @@ export default function app() {
     "/instructor-endorsements": () => <InstructorEndorsements />,
     "/veterans": () => <Veterans />,
     "/faq": () => <FAQ />,
-    "/contact": () => <Contact />
+    "/contact": () => <Contact />,
+    "/privacy-policy": () => <PrivacyPolicy />
   };
   
   const routeResult = useRoutes(routes)
