@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Header from "../resources/headerMain"
 import Footer from "../resources/footerMain"
@@ -51,7 +52,7 @@ export default function accreditation() {
                         </div>
 
                         <div className="banner-button">
-                            <a href="#">View Curriculumn</a> {/* TODO: Build curriculum page */}
+                            <Link to="/curriculum">View Curriculumn</Link>
                         </div>
                     </div>
 

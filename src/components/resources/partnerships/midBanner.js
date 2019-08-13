@@ -13,12 +13,20 @@ export default function midBanner() {
         })
     })
 
+    const handleClick = () => {
+        event.preventDefault()
+
+        const form = document.getElementById("Form")
+
+        form.scrollIntoView({behavior: "smooth"})
+    }
+
     return (
         <div className="mid-banner">
             <div className="mid-banner-content-wrapper">
                 <div className="mid-banner-content">
                     <h3>The Best Curriculum For Your Students</h3>
-                    <a href="#Form" id="mid-partner-banner-button">Partner with Bottega</a>
+                    <a href="#Form" id="mid-partner-banner-button" onClick={handleClick}>Partner with Bottega</a>
                 </div>
             </div>
         </div>

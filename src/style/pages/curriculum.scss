@@ -1,0 +1,267 @@
+.curriculum-content-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .curriculum-content {
+        width: 100%;
+
+        .curriculum-header {
+            display: flex;
+            justify-content: center;
+            background-color: #f9f9f9;
+
+            .curriculum-header-content-wrapper {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 100px;
+                width: 1077px;
+
+                img {
+                    width: 530px;
+                    transform: translateY(50px);
+                }
+    
+                .header-text {
+                    width: 482px;
+    
+                    h4 {
+                        font-size: 19px;
+                        font-weight: 300;
+                        margin-bottom: 40px;
+                    }
+    
+                    p {
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 30px;
+                        font-family: 'Nunito Sans', sans-serif;
+                        margin-bottom: 40px;
+                    }
+    
+                    .header-stats-blocks-wrapper {
+                        display: flex;
+                        justify-content: space-between;
+    
+                        .value {
+                            font-size: 23px;
+                            margin-bottom: 5px;
+                        }
+    
+                        .title {
+                            font-size: 16px;
+                            font-weight: 300;
+                            font-family: 'Nunito Sans', sans-serif;
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .curriculum-testimonials-banner {
+            background-color: #0e2f3f;
+            
+            .testimonials-banner-content-wrapper {
+                padding-top: 80px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .testimonials-viewport {
+                    width: 670px;
+                    overflow: hidden;
+
+                    .testimonial-blocks-wrapper {
+                        display: flex;
+                        width: 3290px;
+                        margin-left: 100px;
+                        transition: all .45s cubic-bezier(0.25,1,0.33,1);
+
+                        .content-block {
+                            color: white;
+                            width: 351px;
+                            padding: 50px;
+                            border: 1px solid rgba(255,255,255,.16);
+                            border-radius: 8px;
+                            margin: 0px 8px;
+
+                            h5 {
+                                font-size: 16px;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 700;
+                                color: rgba(255,255,255,.95);
+                                margin-bottom: 50px;
+                            }
+
+                            p {
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 37px;
+                                height: 252px;
+                            }
+
+                            .stars {
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+
+                .testimonial-selectors {
+                    padding-top: 70px;
+                    padding-bottom: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 150px;
+                    
+                    .selector {
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+
+                        .selector-content {
+                            border-radius: 100%;
+                            height: 0px;
+                            width: 0px;
+                            border: 3px solid rgba(255,255,255,.3);
+                            transition: all .45s cubic-bezier(0.25,1,0.33,1);
+                        }
+
+                        .selected {
+                            height: 8px;
+                            width: 8px;
+                            border: 2px solid white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .curriculum-items {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+
+            .curriculum-items-content-wrapper {
+                width: 1077px;
+
+                h4 {
+                    font-size: 19px;
+                    font-weight: 300;
+                    margin-bottom: 40px;
+                }
+
+                .curriculum-items-blocks-wrapper {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+
+                    .content-block {
+                        width: 502px;
+                        display: flex;
+                        height: 140px;
+                        margin-bottom: 60px;
+
+                        img {
+                            width: 120px;
+                            height: 120px;
+                            margin: 0px 20px;
+                        }
+
+                        h5 {
+                            font-size: 18px;
+                            font-family: 'Nunito Sans', sans-serif;
+                            font-weight: 400;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            font-family: 'Nunito Sans', sans-serif;
+                            color: #a5adb9;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+
+        .curriculum-mid-banner {
+            background-color: $green;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+            .mid-banner-content-wrapper {
+                width: 1077px;
+                height: 142px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                img {
+                    width: 150px;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    font-family: 'Roboto Condensed', sans-serif;
+                    color: white;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    border: 2px solid rgba(255,255,255,.7);
+                    padding: 13px 22px;
+                    transition: .2s;
+
+                    &:hover {
+                        border-color: white;
+                    }
+                }
+            }
+        }
+
+        .curriculum-additional-items {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+
+            .curriculum-additional-items-wrapper-content {
+                width: 1077px;
+
+                h4 {
+                    font-size: 19px;
+                    font-weight: 300;
+                    margin-bottom: 40px;
+                }
+
+                .curriculum-additional-items-content {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                .content-block {
+                    width: 502px;
+                    margin-bottom: 30px;
+
+                    h5 {
+                        font-size: 18px;
+                        font-family: 'Nunito Sans', sans-serif;
+                        font-weight: 400;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        font-family: 'Nunito Sans', sans-serif;
+                        color: #a5adb9;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
