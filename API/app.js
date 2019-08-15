@@ -13,6 +13,7 @@ var usersRouter = require('./routes/users');
 var sendSyllabusEmailRouter = require('./routes/sendSyllabusEmail');
 var sendUniversityEmailRouter = require('./routes/sendUniversityEmail');
 var sendInstructorEmailRouter = require('./routes/sendInstructorEmail');
+var sendContactEmailRouter = require('./routes/sendContactEmail');
 
 var app = express();
 
@@ -33,6 +34,7 @@ app.use('/users', usersRouter);
 app.use('/', sendSyllabusEmailRouter);
 app.use('/', sendUniversityEmailRouter);
 app.use('/', sendInstructorEmailRouter);
+app.use('/', sendContactEmailRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
