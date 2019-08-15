@@ -11,6 +11,8 @@ var bodyParser = require('body-parser')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var sendSyllabusEmailRouter = require('./routes/sendSyllabusEmail');
+var sendUniversityEmailRouter = require('./routes/sendUniversityEmail');
+var sendInstructorEmailRouter = require('./routes/sendInstructorEmail');
 
 var app = express();
 
@@ -29,19 +31,8 @@ app.use(cors())
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/', sendSyllabusEmailRouter);
-// app.post('/send_syllabus_email', function(req, res) {
-//   const sgMail = require('@sendgrid/mail');
-//   sgMail.setApiKey("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");
-//   const msg = {
-//     to: 'alex@bottega.tech',
-//     from: 'alex@bottega.tech',
-//     subject: 'Sending with Twilio SendGrid is Fun',
-//     text: 'and easy to do anywhere, even with Node.js',
-//     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-//   };
-//   sgMail.send(msg);
-//   res.send("Good")
-// });
+app.use('/', sendUniversityEmailRouter);
+app.use('/', sendInstructorEmailRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
