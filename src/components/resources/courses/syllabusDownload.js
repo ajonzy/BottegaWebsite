@@ -1,4 +1,3 @@
-// TODO Hook up form to email
 import React, { useState } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -28,6 +27,20 @@ export default function syllabusDownload(props) {
             downloader.click()
 
             window.open(props.syllabus, "_blank")
+
+            fetch("http://127.0.0.1:5000/send_syllabus_email", {
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json"
+                },
+                body: JSON.stringify({
+                    first: first,
+                    last: last,
+                    phone: phone,
+                    email: email
+                })
+            })
+            .catch(error => {})
         }
     }
 
