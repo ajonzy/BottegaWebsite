@@ -10,7 +10,7 @@ router.post('/send_instructor_endorsement_email', function(req, res, next) {
     const email = body.email;
     const city = body.city;
     const state = body.state;
-    const distrct = body.distrct;
+    const district = body.district;
     const school = body.school;
     const cactus = body.cactus;
 
@@ -19,7 +19,7 @@ router.post('/send_instructor_endorsement_email', function(req, res, next) {
     const msg = {
         to: 'alex@bottega.tech',
         from: 'alex@bottega.tech',
-        subject: 'Syllabus Request',
+        subject: 'Instructor Endorsement Request',
         text: `First Name: ${first}\n\nLast Name: ${last}\n\nPhone Number: ${phone}\n\nEmail: ${email}\n\nCity: ${city}\n\nState: ${state}\n\nDistrict: ${district}\n\nSchool: ${school}\n\nCACTUS Number: ${cactus}`
     };
     sgMail.send(msg);
