@@ -71,10 +71,7 @@ export default function veterans() {
                                 Attend our Lehi, UT campus<br/>
                                 Financing Available
                             </p>
-                            <a href="https://apply.bottega.tech/" className="apply-wrapper">
-                                Apply&nbsp;now
-                                <p><span className="apply-arrow">></span></p>
-                            </a>
+                            <h6><a href="https://apply.bottega.tech/">Apply&nbsp;now<span>></span></a></h6>
                         </div>
 
                         <div className="course-description-block">
@@ -87,10 +84,7 @@ export default function veterans() {
                                 Guided online learning path<br/>
                                 Financing Available
                             </p>
-                            <a href="https://apply.bottega.tech/" className="apply-wrapper">
-                                Apply&nbsp;now
-                                <p><span className="apply-arrow">></span></p>
-                            </a>
+                            <h6><a href="https://apply.bottega.tech/">Apply&nbsp;now<span>></span></a></h6>
                         </div>
 
                         <div className="course-description-block">
@@ -103,10 +97,7 @@ export default function veterans() {
                                 Attend by remotely accessing course webinars<br/>
                                 Financing Available
                             </p>
-                            <a href="https://apply.bottega.tech/" className="apply-wrapper">
-                                Apply&nbsp;now
-                                <p><span className="apply-arrow">></span></p>
-                            </a>
+                            <h6><a href="https://apply.bottega.tech/">Apply&nbsp;now<span>></span></a></h6>
                         </div>
                     </div>
                 </div>
