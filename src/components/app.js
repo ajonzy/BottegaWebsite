@@ -41,6 +41,24 @@ export default function app() {
 
   useEffect(() => {
     if (appLoaded.current === false) {
+      // fetch("http://127.0.0.1:5000/send_email", {
+      //     method: "POST",
+      //     headers: {
+      //         "Content-type": "application/json"
+      //     },
+      //     body: JSON.stringify({
+      //         body: "Test"
+      //     })
+      // })
+      // .then(response => response.json())
+      // .then(data => {
+      //   console.log(data)
+      // })
+      // .catch(error => {
+      //     console.log("Fetch Error " + error);
+      // })
+
+
       appLoaded.current = true
     } 
     else {
