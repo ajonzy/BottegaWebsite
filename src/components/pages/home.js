@@ -18,7 +18,7 @@ import PythonJS from "../../../static/assets/images/homepage/Python-JS.png"
 import RubyRails from "../../../static/assets/images/homepage/Ruby-Rails.png"
 import BottegaVideo from "../../../static/assets/images/homepage/Bottega-video.mp4"
 import Quotes from "../../../static/assets/images/homepage/quotes.png"
-import Employers from "../../../static/assets/images/homepage/employers.png"
+import Employers from "../../../static/assets/images/homepage/PanoramicBanner.png"
 import BottegaDifference from "../../../static/assets/images/homepage/bottega-difference.jpg"
 import Quotes2 from "../../../static/assets/images/homepage/quotes2.png"
 import Quotes3 from "../../../static/assets/images/homepage/quotes3.png"
@@ -205,10 +205,12 @@ export default function home() {
                     <div className="employers-section-content">
                         <h2>Courses Targeted To Get You Hired!</h2>
                         <p>Our graduates get hired by some of the<br/>world’s best companies.</p>
-                        <Link to="/employer-list/">Click here to see more!</Link>
                     </div>
 
-                    <img src={Employers} alt=""/>
+                    <div className="panoramic-banner">
+                        <img src={Employers} alt=""/>
+                        <img src={Employers} alt=""/>
+                    </div>
                 </div>
             
                 <div className="bottega-difference-section-wrapper">

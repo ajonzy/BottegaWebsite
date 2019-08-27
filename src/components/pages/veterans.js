@@ -12,7 +12,7 @@ import CourseDescription from "../../../static/assets/images/homepage/course-des
 import ParttimePromo from "../../../static/assets/images/homepage/parttime-promotion.jpg"
 import PythonJS from "../../../static/assets/images/homepage/Python-JS.png"
 import Quotes from "../../../static/assets/images/homepage/quotes.png"
-import Employers from "../../../static/assets/images/homepage/employers.png"
+import Employers from "../../../static/assets/images/homepage/PanoramicBanner.png"
 import BottegaDifference from "../../../static/assets/images/homepage/bottega-difference.jpg"
 import ABCNews from "../../../static/assets/images/homepage/abcnews.png"
 import Forbes from "../../../static/assets/images/homepage/forbes.png"
@@ -146,10 +146,12 @@ export default function veterans() {
                     <div className="employers-section-content">
                         <h2>Courses Targeted To Get You Hired!</h2>
                         <p>Our graduates get hired by some of the<br/>world’s best companies.</p>
-                        <Link to="/employer-list/">Click here to see more!</Link>
                     </div>
 
-                    <img src={Employers} alt=""/>
+                    <div className="panoramic-banner">
+                        <img src={Employers} alt=""/>
+                        <img src={Employers} alt=""/>
+                    </div>
                 </div>
             
                 <div className="bottega-difference-section-wrapper">

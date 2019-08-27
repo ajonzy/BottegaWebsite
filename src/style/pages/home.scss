@@ -433,8 +433,25 @@
         }
     }
 
-    img {
-        width: 100vw;
+    .panoramic-banner {
+        display: flex;
+        align-self: stretch;
+        margin-bottom: 60px;
+        animation: panorama 45s infinite linear;
+
+        img {
+            height: 340px;
+        }
+    }
+
+    @keyframes panorama {
+        0% {
+           transform: translateX(0px);
+        }
+
+        100% {
+            transform: translateX(-3983px);
+        }
     }
 }
 
